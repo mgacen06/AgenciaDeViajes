@@ -23,17 +23,17 @@
     </nav>
     <main class="hijo2form">
         <br><div><h3>Contacto</h3></div>
-        <form method="" action="" class="caja">
+        <form method="" action="" class="caja" id="contacto">
             <label>Nombre<br>
-                <input placeholder="Nombre" type="text" name="" id="nombre">
+                <input placeholder="Nombre" onkeyup="validarnombre()" type="text" name="nombre" id="nombre">
             </label>
             <br><br>
             <label>Apellidos<br>
-                <input placeholder="Apellidos" type="text" name="" id="apellidos">
+                <input placeholder="Apellidos" onkeyup="validarApellidos()" type="text" name="apellidos" id="apellidos">
             </label>
             <br><br>
             <label>Correo<br>
-                <input type="email" name="" id="correo">
+                <input type="email"  onkeyup="validarCorreo()" name="correo" id="correo">
             </label>
             <br><br>
             <label>Texto a enviar<br>

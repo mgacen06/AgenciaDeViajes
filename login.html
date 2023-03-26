@@ -27,14 +27,14 @@
         </form>
         <br>
         <div><h3>Inicio de sesión</h3></div>
-        <form method="" action="" class="caja">
+        <form method="" action="" class="caja" id="login">
         <br><br>
         <label>Correo<br>
-            <input type="email" name="" id="correo">
+            <input type="email" onkeyup="validarCorreo()" name="correo" id="correo">
         </label>
         <br><br>
         <label>Contraseña<br>
-            <input placeholder="********" type="password" id="contrase">
+            <input placeholder="********"  onkeyup="validarConstras()" name="contraseña" type="password" id="contrase">
         </label>
         <br><br>
         <button type="submit" name="">Iniciar sesión</button>

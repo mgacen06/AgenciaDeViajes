@@ -120,7 +120,7 @@ for(let i=0;i<nombreViaje.length;i++){
     lugar.textContent=ubicacion[i];
     let precio=document.createElement("div");
     precio.setAttribute("class","precio");
-    precio.textContent=`${precioPorNoche[i]} noche`;
+    precio.textContent=`${precioPorNoche[i]} € / noche`;
 
     info.appendChild(titulo);
     info.appendChild(estancia);

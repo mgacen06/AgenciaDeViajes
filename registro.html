@@ -23,37 +23,37 @@
     </nav>
     <main class="hijo2form">
         <div><h3>Registro</h3></div>
-                <form method="" action="" class="caja">
+                <form method="" action="" class="caja" id="registro">
                     <label>Nombre<br>
-                        <input placeholder="Nombre" type="text" name="" id="nombre">
+                        <input placeholder="" onkeyup="validarNombre()" type="text" name="nombre" id="nombre">
                     </label>
                     <br><br>
                     <label>Apellidos<br>
-                        <input placeholder="Apellidos" type="text" name="" id="apellidos">
+                        <input placeholder="Apellidos" onkeyup="validarApellidos()" type="text" name="apellidos" id="apellidos">
                     </label>
                     <br><br>
                     <label>DNI<br>
-                        <input placeholder="DNI" type="text" name="" id="dni">
+                        <input placeholder="DNI" onkeyup="validarDNI()"  type="text" name="dni" id="dni">
                     </label>
                     <br><br>
                     <label>Teléfono<br>
-                        <input placeholder="123456789" type="tel" id="tlfn">
+                        <input placeholder="123456789" onkeyup="validarTel()"  type="tel" name="telefono" id="tlfn">
                     </label>
                     <br><br>
                     <label>Dirección<br>
-                        <input type="text" id="dir">
+                        <input type="text" onkeyup="validarDir()" name="direccion" id="dir">
                     </label>
                     <br><br>
                     <label>Correo<br>
-                        <input placeholder="ejemplocorreo@gmail.com" type="email" name="" id="correo">
+                        <input placeholder="ejemplocorreo@gmail.com" onkeyup="validarCorreo()"  type="email" name="correo" id="correo">
                     </label>
                     <br>
                     <label>Contraseña<br>
-                        <input placeholder="********" type="password" id="contrase">
+                        <input placeholder="********" onkeyup="validarContras()" name="contraseña"  type="password" id="contrase">
                     </label>
                     <br><br>
                     <label>Acepto las condiciones de uso<br>
-                        <input type="checkbox" name="" id="condiciones">
+                        <input type="checkbox" onkeyup="validarCondiciones()"  name="condiciones" id="condiciones">
                     </label>
                     <br><br>
                     <button type="submit" name="" id="boton"><h7>Registrarse</h7></button>
