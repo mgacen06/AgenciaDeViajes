@@ -10,14 +10,41 @@
     <link rel="shortcut icon" href="img/icono.ico" type="" id="icono">
     <title>Viajes Lario</title>
 </head>
+
+<!-- Estructura de estilos del programa:
+    body    Para el body su nombre
+        nav     Para el nav su nombre
+            ul      .ulnav
+                li      .linav
+        main    Para el main su nombre
+            div     .buscador   El buscador por diferentes filtros
+                button  .botonBuscador
+                div     .filtrosBuscador
+                    div     .filtro
+                    div     .filtro
+                    div     .filtro
+            div     .ofertaViajes   Donde estan todos los viajes
+                div     .card   La card de cada viaje
+                    img     .imagen     La imagen principal del viaje
+                    div     .infoViaje      El cuadro donde esta la informacion
+                        h4      .titulo
+                        small   .estancia   Tipo de estancia
+                        p       .lugar      Lugar del viaje
+                        div     .precio     
+        footer  Para el footer su nombre
+            div     .redesSociales  Espacio para las redes sociales de la web
+                a       .redes      
+                div     .infoFooter
+                    div     .about
+                    div     .maps
+                
+-->
 <body>
     <nav class="hijo1">
         <ul class="ulnav">
             <li><a class="hijo1boton" href="index.html"><i id="icono" class="fa fa-plane"></i> Inicio</a></li>
             <li><a class="hijo1boton" href="#aboutus"><i id="icono" class=<i class="fas fa-users" style="color: #ffffff;"></i> Sobre nosotros</a></li>
             <li><a class="hijo1boton" href="contacto.html"><i id="icono" class="fa fa-handshake"></i> Contacto</a></li>
-            <!-- El login todavia no esta implementado -->
-            <!-- La funcion de cambiar de idioma todavia no esta implementada -->
             <li><a class="hijo1boton" href="login.html"><i id="icono" class="fa-solid fa-arrow-right-to-bracket"></i> Login</a></li>
         </ul>
     </nav>
@@ -34,199 +61,7 @@
                 <div></div>
             </div>
         </div>
-        <!-- PONER LOS TIPOS DE ALOJAMIENTO: LUJO, MEDIO, CABAÑA... -->
         <div class="hijo2hijo2">
-            <!-- <div id="hijo2hijo2hijo1">
-                <img src="img/h1.1.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Central Apartamento de 2 habitaciones, Apartahotel</b></h4>  
-                    <small>Apartahotel</small>
-                    <div>Helsinki</div>
-                    <div class="precio">104€ noche</div>
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/h2.1.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Apartamento en el centro</b></h4>
-                    <small>Apartahotel</small>
-                    <div>Helsinki</div>
-                    <div class="precio">112€ noche</div>  
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/h3.1.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Acogedora cabaña de madera con sauna</b></h4>
-                    <small>Cabaña</small>
-                    <div>Helsinki</div>
-                    <div class="precio">80€ noche</div>  
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/l1.1.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Iglú de nieve</b></h4>  
-                    <small>Iglú</small>
-                    <div>Laponia</div>
-                    <div class="precio">130€ noche</div>
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/l2.1.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Casa de campo tranquila con sauna cerca del lago</b></h4>
-                    <small>Cabaña</small>
-                    <div>Laponia</div>
-                    <div class="precio">119€ noche</div>  
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/l3.1.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Elegante apartamento escandinavo en el centro de la ciudad</b></h4>
-                    <small>Apartahotel</small>
-                    <div>Laponia</div>
-                    <div class="precio">150€ noche</div>
-
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/t1.1.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Hulppe Sauna Center Apartment</b></h4>
-                    <small>Apartahotel</small>
-                    <div>Tampere</div>  
-                    <div class="precio">175€ noche</div> 
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/t2.1.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Piso con ubicación céntrica 2br, sauna y terraza.</b></h4> 
-                    <small>Apartahotel</small>
-                    <div>Tampere</div>
-                    <div class="precio">159€ noche</div>
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/t3.1.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Estudio Deluxel</b></h4>
-                    <small>Apartahotel</small>
-                    <div>Tampere</div>
-                    <div class="precio">115€ noche</div> 
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/p1.1.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Habitación glamurosa en el casco antiguo</b></h4> 
-                    <small>Hotel</small>
-                    <div>Praga</div> 
-                    <div class="precio">139€ noche</div>
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/p2.1.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Habitación cuádruple en Archibald At the Charles Bridge</b></h4> 
-                    <small>Hotel</small>
-                    <div>Praga</div> 
-                    <div class="precio">143 € noche</div>
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/p3.1.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Habitación céntrica con vistas al mercado Havelské tržiště</b></h4> 
-                    <small>Hotel</small>
-                    <div>Praga</div> 
-                    <div class="precio">115€ noche</div>
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/m1.1.jpg" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Habitación en The Big One - Long Story Short</b></h4> 
-                    <small>Hotel</small>
-                    <div>Moravia</div>
-                    <div class="precio">148€ noche</div> 
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/m2.1.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Habitación para 2 huéspedes sin balcón</b></h4> 
-                    <small>Hotel</small>
-                    <div>Moravia</div>
-                    <div class="precio">154€ noche</div> 
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/m3.1.jpg" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Apartamento low cost</b></h4> 
-                    <small>Apartahotel</small>
-                    <div>Moravia</div>
-                    <div class="precio">96€ noche</div> 
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/b1.1.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Apartamento con jardín</b></h4> 
-                    <small>Apartahotel</small>
-                    <div>Bohemia</div> 
-                    <div class="precio">170€ noche</div>
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/b2.3.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Cabaña histórica con piscina cubierta</b></h4> 
-                    <small>Cabaña</small>
-                    <div>Bohemia</div>
-                    <div class="precio">103€ noche</div> 
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/b3.3.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Miniapartamento a las afueras</b></h4> 
-                    <small>Apartahotel</small>
-                    <div>Bohemia</div> 
-                    <div class="precio">101€ noche</div>
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/z1.1.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Bungalow de 3 camas</b></h4> 
-                    <small>Cabaña</small>
-                    <div>Zanzíbar</div>
-                    <div class="precio">95€ noche</div>
-                 
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/z2.3.webp" alt="Avatar" style="width:100%">
-                <div class="info">
-                    <h4><b>Habitación cerca del puerto aéreo</b></h4> 
-                    <small>Hotel</small>
-                    <div>Zanzíbar </div> 
-                    <div class="precio">95€ noche</div>
-                </div>
-            </div>
-            <div id="hijo2hijo2hijo1">
-                <img src="img/z3.1.webp" alt="Avatar" style="width:100%">
-                <div class="info"> 
-                    <h4><b>Apartamento de 2 dormitorios, Apartahotel</b></h4>
-                    <small>Apartahotel</small> 
-                    <div>Zanzíbar </div>  
-                    <div class="precio">142€ noche</div>
-                </div>
-            </div>    -->
         </div>
     </main>
     <footer class="hijo3">
