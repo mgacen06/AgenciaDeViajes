@@ -1,0 +1,72 @@
+
+
+body{
+    background-color: rgb(34, 34, 70);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+h1{
+    color: #ffffff;
+    text-align: center;
+    
+}
+#tabla{
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: row;
+    /* border: solid rgb(0, 0, 0) 2px; */
+    text-align: center;  
+    justify-content: center;
+    font-size: 15px;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    align-content: center;
+    /* algo pasa con esto */
+    width: max-content;
+    justify-content:center;
+
+}
+.titulo{
+    border: 2px black solid;
+    border-collapse: collapse;
+}
+.tablacontenido{
+    border-collapse: collapse;
+    /* creo que no funciona */
+    border: 2px black solid;
+    width: 500px;
+    
+}
+
+.id{
+    border-collapse: collapse;
+    color:brown;
+    border:#111 2px solid;
+}
+.usuario{
+    border:#111 2px solid;
+}
+
+#botonesAdmin{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+#adminboton{
+    display: flex;
+    border-radius: 20px;
+    border: 1px black solid;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    width:70px;
+    background-color: #ffffff;
+}
+#adminboton:hover{
+    border: 1px solid #111;
+    box-shadow: 0px 0px 26px 8px hsla(268, 40%, 71%, 0.58);
+    background-color: #ffffff;
+}
