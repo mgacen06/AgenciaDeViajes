@@ -62,4 +62,6 @@ function validarCondiciones(){
         ESPACIOS
         \s espacios (tabulación salto, espacio)
         \S 
+
+      
 */

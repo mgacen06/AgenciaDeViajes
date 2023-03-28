@@ -129,5 +129,4 @@ for(let i=0;i<nombreViaje.length;i++){
     card.appendChild(img);
     card.appendChild(info);
     ofertaViajes.appendChild(card);
-
 }
