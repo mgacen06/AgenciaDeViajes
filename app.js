@@ -99,18 +99,15 @@ let precioPorNoche=[
     95,95,142
 ]
 
-let ofertaViajes=document.getElementsByClassName("hijo2hijo2")[0];
+let ofertaViajes=document.getElementsByClassName("ofertaViajes")[0];
 
 for(let i=0;i<nombreViaje.length;i++){
     let card=document.createElement("div");
-    card.setAttribute("id","hijo2hijo2hijo1");
+    card.setAttribute("id","card");
     let img=document.createElement("img");
     img.setAttribute("src",imagenPrincipal[i]);
     img.setAttribute("alt","Avatar");
-    img.style.width="25vw";
-    img.style.height="15vw";
-    img.style.borderRadius = "10px";
-    img.setAttribute("class","imagen");
+    img.setAttribute("class", "imagen")
     let info=document.createElement("div");
     info.setAttribute("class","info");
     let titulo=document.createElement("h4");
@@ -132,5 +129,4 @@ for(let i=0;i<nombreViaje.length;i++){
     card.appendChild(img);
     card.appendChild(info);
     ofertaViajes.appendChild(card);
-
 }
