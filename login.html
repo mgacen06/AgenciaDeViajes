@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,30 +12,34 @@
     <link rel="shortcut icon" href="imagenes/icono.ico" type="" id="icono">
     <title>Login</title>
 </head>
+
 <body>
     <nav class="hijo1">
         <ul class="ulnav">
             <li><a class="hijo1boton" href="index.html"><i id="icono" class="fa fa-plane"></i>Inicio</a></li>
             <li><a class="hijo1boton" href="#aboutus"><i id="icono" class="fas fa-users"></i> Sobre nosotros</a></li>
             <li><a class="hijo1boton" href="contacto.html"><i id="icono" class="fa fa-handshake"></i>Contacto</a></li>
-            <!-- El login todavia no esta implementado -->
-            <!-- La funcion de cambiar de idioma todavia no esta implementada -->
-            <li><a class="hijo1boton" href="login.html"><i id="icono" class="fa-solid fa-arrow-right-to-bracket"></i>Login</a></li>
+            <li><a class="hijo1boton" href="login.html"><i id="icono"
+                        class="fa-solid fa-arrow-right-to-bracket"></i>Login</a></li>
         </ul>
     </nav>
     <main class="hijo2form">
         <br>
-        <div><h3>Inicio de sesión</h3></div>
+        <div>
+            <h3>Inicio de sesión</h3>
+        </div>
         <form method="" action="" class="caja" id="login">
             <br><br>
             <label>Correo<br>
-                <input type="email" onkeyup="validarCorreo()" name="correo" id="correo">
-                <span id="spancorreo"></span>
+                <input type="email" placeholder="xxxxx@gmail.com" onblur="validarCorreo()" name="correo" id="correo">
+                <span id="spanCorreo"></span>
             </label>
             <br><br>
             <label>Contraseña<br>
-                <input placeholder="********" onblur="validarContrasenia()" name="contrasenia" type="password" id="contrase">
-                <span id=" spancontras"></span>
+                <input placeholder="********" onblur="validarContrasenia()" name="contrasenia" type="password"
+                    id="contrasenia">
+                <br>
+                <span id="spanContrasenia"></span>
             </label>
             <br><br>
             <button type="submit" name="">Iniciar sesión</button>
@@ -47,24 +52,32 @@
     </main>
     <footer class="hijo3">
         <div class="hijo3hijo1">
-            <a class="redes" href="https://www.instagram.com/mgacen06/"><i id="botontw" class="fab fa-instagram"></i>Instagram</a>
+            <a class="redes" href="https://www.instagram.com/mgacen06/"><i id="botontw"
+                    class="fab fa-instagram"></i>Instagram</a>
             <a class="redes" href="https://twitter.com"><i id="botontw" class="fab fa-twitter"></i>Twitter</a>
         </div>
         <div class="hijo3hijo2">
             <div id="aboutus">
                 <!-- Sobre nosotros -->
                 <h4>Nuestra historia:</h4>
-                <p>Es una empresa que nació en 2004, por Lucía Ortiz y Mario García, llegando a posicionarse como una de las empresas de viajes con más usuarios registrados, en la que más de 50.000 personas al año confían para planificar sus vacaciones.</p>
+                <p>Es una empresa que nació en 2004, por Lucía Ortiz y Mario García, llegando a posicionarse como una de
+                    las empresas de viajes con más usuarios registrados, en la que más de 50.000 personas al año confían
+                    para planificar sus vacaciones.</p>
                 <p>Visita nuestras redes sociales para conocer más.</p>
             </div>
             <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.2936372113486!2d-3.700712785105893!3d40.402345364439114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226329f436ff9%3A0x12f6d2396a33911!2sIMF%20Smart%20Education!5e0!3m2!1ses!2ses!4v1669974340422!5m2!1ses!2ses" width="500" height="350" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.2936372113486!2d-3.700712785105893!3d40.402345364439114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226329f436ff9%3A0x12f6d2396a33911!2sIMF%20Smart%20Education!5e0!3m2!1ses!2ses!4v1669974340422!5m2!1ses!2ses"
+                    width="500" height="350" style="border:1;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <br>
-            <small>Copyright © 2022 Empresa de venta de alojamientos. Todos los derechos reservados. C/ Bernardino Obregón 25, 28012. Madrid, España</small>
-            
+            <small>Copyright © 2022 Empresa de venta de alojamientos. Todos los derechos reservados. C/ Bernardino
+                Obregón 25, 28012. Madrid, España</small>
+
         </div>
     </footer>
 </body>
 <script src="app_login.js"></script>
+
 </html>
