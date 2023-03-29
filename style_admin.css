@@ -6,16 +6,23 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 
-h1{
-    color: #ffffff;
-    text-align: center;
-    
+#admin{
+font-family: ;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #775bc3, #ceb7e4);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
+
 #tabla{
     border-collapse: collapse;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     /* border: solid rgb(0, 0, 0) 2px; */
     text-align: center;  
@@ -28,16 +35,22 @@ h1{
     width: max-content;
     justify-content:center;
 
+    width: 500px;
+	height: 60%;
+    
 }
 .titulo{
     border: 2px black solid;
     border-collapse: collapse;
+    height: 40px;
+    font-size: larger;
 }
 .tablacontenido{
     border-collapse: collapse;
     /* creo que no funciona */
     border: 2px black solid;
-    width: 500px;
+    width: max-content;
+    height: max-content;
     
 }
 
@@ -45,15 +58,26 @@ h1{
     border-collapse: collapse;
     color:brown;
     border:#111 2px solid;
+    width: 100px;
+    height: 25px;
 }
 .usuario{
     border:#111 2px solid;
+    width: 200px;
+    height: 25px;
+}
+.contraseña{
+    width: 200px;
+    height: 25px;
+
 }
 
 #botonesAdmin{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
+    margin-top: 200px;
+    gap: 15px;
 }
 #adminboton{
     display: flex;
@@ -64,9 +88,11 @@ h1{
     justify-content: center;
     width:70px;
     background-color: #ffffff;
+    color: blue;
 }
 #adminboton:hover{
     border: 1px solid #111;
     box-shadow: 0px 0px 26px 8px hsla(268, 40%, 71%, 0.58);
     background-color: #ffffff;
+    color:brown;
 }
