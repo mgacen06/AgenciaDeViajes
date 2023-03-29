@@ -16,8 +16,6 @@
             <li><a class="hijo1boton" href="index.html"><i id="icono" class="fa fa-plane"></i> Inicio</a></li>
             <li><a class="hijo1boton" href="#aboutus"><i id="icono" class="fas fa-users"></i> Sobre nosotros</a></li>
             <li><a class="hijo1boton" href="contacto.html"><i id="icono" class="fa fa-handshake"></i> Contacto</a></li>
-            <!-- El login todavia no esta implementado -->
-            <!-- La funcion de cambiar de idioma todavia no esta implementada -->
             <li><a class="hijo1boton" href="login.html"><i id="icono"class="fa-solid fa-arrow-right-to-bracket"></i> Login</a></li>
         </ul>
     </nav>
@@ -25,35 +23,46 @@
         <div><h3>Registro</h3></div>
                 <form method="" action="" class="caja" id="registro">
                     <label>Nombre<br>
-                        <input placeholder="" onkeyup="validarNombre()" type="text" name="nombre" id="nombre">
+                        <input type="text" placeholder="Nombre" onblur="validarNombre()" name="nombre" id="nombre">
+                        <span id="spanNombre"></span>
                     </label>
                     <br><br>
                     <label>Apellidos<br>
-                        <input placeholder="Apellidos" onkeyup="validarApellidos()" type="text" name="apellidos" id="apellidos">
+                        <input type="text" placeholder="Apellidos" onblur="validarApellidos()" name="apellidos" id="apellidos">
+                        <span id="spanApellido"></span>
                     </label>
                     <br><br>
                     <label>DNI<br>
-                        <input placeholder="DNI" onkeyup="validarDNI()"  type="text" name="dni" id="dni">
+                        <input placeholder="00000000X" onblur="validarDNI()"  type="text" name="dni" id="dni">
+                        <span id="spanDNI"></span>
                     </label>
                     <br><br>
                     <label>Teléfono<br>
-                        <input placeholder="123456789" onkeyup="validarTel()"  type="tel" name="telefono" id="tlfn">
+                        <input placeholder="123456789" onblur="validarTel()"  type="tel" name="telefono" id="tlfn">
+                        <br>
+                        <span id="spanTlfn"></span>
                     </label>
                     <br><br>
                     <label>Dirección<br>
-                        <input type="text" onkeyup="validarDir()" name="direccion" id="dir">
+                        <input placeholder="Direccion completa" type="text" onblur="validarDir()" name="direccion" id="dir">
+                        <br>
+                        <span id="spanDir"></span>
                     </label>
                     <br><br>
                     <label>Correo<br>
-                        <input placeholder="ejemplocorreo@gmail.com" onkeyup="validarCorreo()"  type="email" name="correo" id="correo">
+                        <input type="email" placeholder="xxxxx@gmail.com" onblur="validarCorreo()" name="correo" id="correo">
+                        <span id="spanCorreo"></span>
                     </label>
-                    <br>
+                    <br><br>
                     <label>Contraseña<br>
-                        <input placeholder="********" onkeyup="validarContras()" name="contraseña"  type="password" id="contrase">
+                        <input placeholder="********" onblur="validarContrasenia()" name="contrasenia" type="password"
+                            id="contrasenia">
+                        <br>
+                        <span id="spanContrasenia"></span>
                     </label>
                     <br><br>
                     <label>Acepto las condiciones de uso<br>
-                        <input type="checkbox" onkeyup="validarCondiciones()"  name="condiciones" id="condiciones">
+                        <input type="checkbox" name="condiciones" id="condiciones" value="Acepto">
                     </label>
                     <br><br>
                     <button type="submit" name="" id="boton"><h7>Registrarse</h7></button>
@@ -80,4 +89,5 @@
         </div>
     </footer>
 </body>
+<script src="app_registro.js"></script>
 </html>

@@ -16,8 +16,6 @@
             <li><a class="hijo1boton" href="index.html"><i id="icono" class="fa fa-plane"></i> Inicio</a></li>
             <li><a class="hijo1boton" href="#aboutus"><i id="icono" class="fas fa-users"></i> Sobre nosotros</a></li>
             <li><a class="hijo1boton" href="contacto.html"><i id="icono" class="fa fa-handshake"></i> Contacto</a></li>
-            <!-- El login todavia no esta implementado -->
-            <!-- La funcion de cambiar de idioma todavia no esta implementada -->
             <li><a class="hijo1boton"  href="login.html"><i id="icono" class="fa-solid fa-arrow-right-to-bracket"></i>Login</a></li>
         </ul>
     </nav>
@@ -25,22 +23,27 @@
         <br><div><h3>Contacto</h3></div>
         <form method="" action="" class="caja" id="contacto">
             <label>Nombre<br>
-                <input placeholder="Nombre" onkeyup="validarnombre()" type="text" name="nombre" id="nombre">
+                <input type="text" placeholder="Nombre" onblur="validarNombre()" name="nombre" id="nombre">
+                <span id="spanNombre"></span>
             </label>
             <br><br>
             <label>Apellidos<br>
-                <input placeholder="Apellidos" onkeyup="validarApellidos()" type="text" name="apellidos" id="apellidos">
+                <input type="text" placeholder="Apellidos" onblur="validarApellidos()" name="apellidos" id="apellidos">
+                <span id="spanApellido"></span>
             </label>
             <br><br>
             <label>Correo<br>
-                <input type="email"  onkeyup="validarCorreo()" name="correo" id="correo">
+                <input type="email" placeholder="xxxxx@gmail.com" onblur="validarCorreo()" name="correo" id="correo">
+                <span id="spanCorreo"></span>
             </label>
             <br><br>
             <label>Texto a enviar<br>
-                <textarea rows="3" cols="20" name="" id="" ></textarea>
+                <textarea rows="3" cols="20" placeholder="De 5 a 150 carácteres" onblur="validarTexto()" name="texto" id="texto" ></textarea>
+                <br>
+                <span id="spanTexto"></span>
             </label>
             <br><br>
-            <button type="button" name="" id="boton">Enviar</button>
+            <button type="submit" name="" id="boton">Enviar</button>
         </form>
     </main>
     <footer class="hijo3">
@@ -64,4 +67,5 @@
         </div>
     </footer>
 </body>
+<script src="app_contacto.js"></script>
 </html>
