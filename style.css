@@ -11,8 +11,9 @@
         margin: 0px;
         background: rgb(187,150,218);
         background: linear-gradient(90deg, rgba(187,150,218,0.8885679271708683) 20%, rgba(168,150,221,1) 52%, rgba(131,132,222,1) 79%);
-    
+        
     }
+
     /* Contenido del nav */
     nav {
         display: flex;
@@ -20,8 +21,8 @@
         /* position: fixed; */
         width: 97vw;
         /* BORDES NAV */
-        margin: 10px;
         padding: 2px;
+        background-color: black;
     }
 
     .ulnav {
@@ -32,20 +33,19 @@
         padding-left: 0px;
         width:600px;
     }
-
     .linav {
         display: flex;
-        background-color: #D6EAF8;
-        border: 2px solid rgb(200, 199, 226);
-        border-radius: 60px;
         padding: 10px;
         margin: 2px 5px 2px 5px;
         font-size: large;
+        font-size: 20px;
+        color: white;
     }
 
     .linav:hover {
-        background-color: rgb(44, 79, 104);
-        color: #ffffff;
+        border-bottom: white solid 2px;
+
+        color:rgb(209, 180, 241)
     }
     /* Contenido del main */
     main {
@@ -215,7 +215,7 @@
     .imagen{
         width: 15vw;
         height: 15vw;
-        border-radius: 10px;
+        border-radius: 20px 20px 0px 0px;
     }
 
     .imagen:hover{
@@ -244,6 +244,8 @@
         color: rgb(250, 250, 250);
         width: 50px;
         font-size: 13px;
+        padding: 10px;
+        margin-left: 10px;
     }
 
     .hijo2form {
@@ -313,32 +315,34 @@
         display: flex;
         /* position: fixed; */
         width: 97vw;
-        margin: 10px;
+        margin: 0px;
         padding: 2px;
+        background-color: black;
     }
 
     .ulnav {
         display: flex;
         flex-wrap: wrap;
         list-style: none;
-        margin: 4px 10px 4px 10px;
+        margin: 0px;
         padding-left: 0px;
-        width: 1200px;
+        margin-bottom:10px ;
+        width: 100vw;
         justify-content:space-between;
+
     }
 
     .linav {
         display: flex;
-        background-color: #D6EAF8;
-        border: 2px solid rgb(200, 199, 226);
-        border-radius: 60px;
         padding: 10px;
-        margin: 2px 5px 2px 5px;
+        margin: 10px 5px 10px 5px;
+        font-size: 20px;
+        color:white;
     }
 
     .linav:hover {
-        background-color: rgb(44, 79, 104);
-        color: #ffffff;
+        border-bottom: #ffffff solid 2px;
+        color: #ccaff2;
     }
     /* Contenido del main */
     main {
@@ -357,7 +361,7 @@
         flex-direction: column;
         align-content: center;
         align-items: center;
-        background-color: rgb(78, 52, 155);
+        background-color: rgb(0, 0, 0);
         width: 100vw;
         margin: 0px;
     }
@@ -367,19 +371,17 @@
         display: flex;
         flex-wrap: wrap;
         width: auto;
-        background-color: rgb(255, 255, 255);
         margin-top: 10px;
-        /* bordes */
-        border: 2px solid rgb(200, 199, 226);
-        border-radius: 50px;
+        color:#ffffff;
     }
-
     .redes {
+        color: white;
         display: flex;
         margin: 5px;
         padding: 5px;
-        border: 2px solid rgb(200, 199, 226);
         border-radius: 50px;
+        justify-content: right;
+    
     }
 
     .redes:hover {
@@ -394,6 +396,7 @@
         padding: 10px;
         border-radius: 25px;
         flex-direction: column;
+        color: white;
     }
 
     #aboutus {
@@ -401,7 +404,7 @@
         align-items: center;
         margin: 15px;
         padding: 10px;
-        background-color: #ffffff;
+        color:#ffffff;
         border: 1px solid rgb(54, 49, 49);
         border-radius: 25px;
     }
@@ -459,6 +462,10 @@
         background-color: rgb(200, 199, 226);
         height: 90px;
         width: 2px;
+    }
+    #titulo{
+        font-family: Montserrat;
+        font-size: 50px;
     }
 
     .buscador {
@@ -525,7 +532,7 @@
     .imagen{
         width: 25vw;
         height: 15vw;
-        border-radius: 10px;
+        border-radius: 20px 20px 0px 0px;
     }
 
     .imagen:hover{
@@ -538,18 +545,24 @@
         margin: 1px 10px 10px 10px;
 
     }
+    .titulo{
+        margin-top:0px;
+    }
 
     .precio {
         text-align: center;
         padding: 10px;
         margin-top: 10px;
         margin-bottom: 0px;
-        border-radius: 40px;
+        border-radius: 30px 0px 30px 0px;
         border: 1px solid #ffffff;
-        background-color: rgb(39, 22, 48);
+        background-color: rgb(0, 0, 0);
         color: rgb(250, 250, 250);
-        width: 50px;
+        width: 70px;
         font-size: 13px;
+        padding: 10px;
+        margin-left: 10px;
+
     }
 
     .info:hover {

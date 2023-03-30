@@ -98,35 +98,70 @@ let precioPorNoche=[
     139,143,115,148,154,96,170,103,101,
     95,95,142
 ]
+let input = document.getElementsByClassName("destino");
+console.log(input);
 
 let ofertaViajes=document.getElementsByClassName("ofertaViajes")[0];
+    for(let i=0;i<nombreViaje.length;i++){
+        let card=document.createElement("div");
+        card.setAttribute("id","card");
+        let img=document.createElement("img");
+        img.setAttribute("src",imagenPrincipal[i]);
+        img.setAttribute("alt","Avatar");
+        img.setAttribute("class", "imagen")
+        let info=document.createElement("div");
+        info.setAttribute("class","info");
+        let titulo=document.createElement("h4");
+        titulo.setAttribute("class","titulo");
+        titulo.style.fontWeight="bolder";
+        titulo.textContent= nombreViaje[i];
+        let estancia=document.createElement("small");
+        estancia.textContent=tipoEstancia[i];
+        let lugar=document.createElement("p");
+        lugar.setAttribute("id","lugar");
+        lugar.textContent=ubicacion[i];
+        let precio=document.createElement("div");
+        precio.setAttribute("class","precio");
+        precio.textContent=`${precioPorNoche[i]} € / noche`;
+        console.log(card.textContent);
+        info.appendChild(titulo);
+        info.appendChild(estancia);
+        info.appendChild(lugar);
+        info.appendChild(precio);
+    
+        card.appendChild(img);
+        card.appendChild(info);
+        ofertaViajes.appendChild(card);
+       
+    }
 
-for(let i=0;i<nombreViaje.length;i++){
-    let card=document.createElement("div");
-    card.setAttribute("id","card");
-    let img=document.createElement("img");
-    img.setAttribute("src",imagenPrincipal[i]);
-    img.setAttribute("alt","Avatar");
-    img.setAttribute("class", "imagen")
-    let info=document.createElement("div");
-    info.setAttribute("class","info");
-    let titulo=document.createElement("h4");
-    titulo.style.fontWeight="bolder";
-    titulo.textContent= nombreViaje[i];
-    let estancia=document.createElement("small");
-    estancia.textContent=tipoEstancia[i];
-    let lugar=document.createElement("p");
-    lugar.textContent=ubicacion[i];
-    let precio=document.createElement("div");
-    precio.setAttribute("class","precio");
-    precio.textContent=`${precioPorNoche[i]} € / noche`;
 
-    info.appendChild(titulo);
-    info.appendChild(estancia);
-    info.appendChild(lugar);
-    info.appendChild(precio);
+function filtrarPorDestino(){
+    let valor = document.getElementById("destino").value;
+    let cards = document.getElementById("card");
+    let lugar = document.getElementById("lugar");
+    for(i in cards){
+        console.log(cards);
+    }
+    console.log(lugar);
+   //recorro las cards
+    for(let i=0;i<cards.length;i++){
+        console.log('el codigo llega');
+        //condicional que filtra
+        console.log(valor);
+        if(lugar.textContent.includes(valor.toLowerCase())){
+            console.log(lugar);
+            cards.style.display = 'block';
 
-    card.appendChild(img);
-    card.appendChild(info);
-    ofertaViajes.appendChild(card);
-}
+        }else{
+            cards.style.display = 'none';
+
+        }
+    }
+    
+ }
+
+
+
+
+ 
