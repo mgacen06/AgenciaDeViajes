@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../PFC/fontawesome/css/all.css">
     <link rel="shortcut icon" href="img/icono.ico" type="" id="icono">
+    <script src="navYFooter.js"></script>
     <title>Viajes Lario</title>
 </head>
 
@@ -40,10 +41,10 @@
                 
 -->
 <body>
-    <nav>
+    <nav id="elNav">
         <ul class="ulnav">
             <li><a class="linav" href="index.html"><i id="icono" class="fa fa-plane"></i> Inicio</a></li>
-            <li><a class="linav" href="#aboutus"><i id="icono" class="fas fa-users" style="color: #ffffff;"></i> Sobre nosotros</a></li>
+            <li><a class="linav" href="#aboutus"><i id="icono" class="fas fa-users"></i> Sobre nosotros</a></li>
             <li><a class="linav" href="contacto.html"><i id="icono" class="fa fa-handshake"></i> Contacto</a></li>
             <li><a class="linav" href="login.html"><i id="icono" class="fa-solid fa-arrow-right-to-bracket"></i> Login</a></li>
         </ul>
@@ -57,13 +58,12 @@
             <div class="filtrosBuscador">
                 <input type="text"  placeholder="¿Qué fecha te gustaría alojarte?">
                 <div class="lineah"></div>
-                <input type="text" class="destino" id="destino" onkeyup="filtrarPorDestino()" name="destino" placeholder="Destino">
+                <input type="text" class="destino" id="destino" name="destino" placeholder="Destino">
                 <div></div>
             </div>
         </div>
         <div class="ofertaViajes"></div>
     </main>
-    
     <footer>
         <div class="redesSociales">
             <a class="redes" href="https://www.instagram.com/mgacen06/"><i id="botontw" class="fab fa-instagram"></i>Instagram</a>
@@ -82,5 +82,6 @@
         </div>
     </footer>
 </body>
+<!-- <script src="navYFooter.js"></script> -->
 <script src="app.js"></script>
 </html>
