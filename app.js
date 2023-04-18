@@ -35,7 +35,7 @@ let datosCards = [
         precioPorNoche: 119
     },
     {
-        nombreViaje: "Elegante apartamento escandinavo en el centro de la ciudad",
+        nombreViaje: "Elegante apartamento en el centro de la ciudad",
         imagenPrincipal: "img/l3.1.webp",
         tipoEstancia: "ApartaHotel",
         ubicacion: "Laponia",
