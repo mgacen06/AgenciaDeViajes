@@ -1,22 +1,22 @@
 ﻿id,nombreViaje,imagenPrincipal,tipoEstancia,ubicacion,precioPorNoche
 1,Central Apartamento de 2 habitaciones, Apartahotel,img/h1.1.webp,ApartaHotel,Helsinki,104
-2,Apartamento en el centro,img/h2.1.webp,ApartaHotel,
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
+2,Apartamento en el centro,img/h2.1.webp,ApartaHotel,Helsinki,112
+3,Acogedora cabaña de madera con sauna,img/h3.1.webp,Cabaña,Helsinki,80
+4,Iglú de nieve,img/l1.1.webp,Iglú,Laponia,130
+5,Casa de campo tranquila con sauna cerca del lago,img/l2.1.webp,Cabaña,Laponia,119
+6,Elegante apartamento en el centro de la ciudad,img/l3.1.webp,ApartaHotel,Laponia,150
+7,Hulppe Sauna Center Apartment,img/t1.1.webp,ApartaHotel,Tampere,175
+8,Piso con ubicación céntrica 2br, sauna y terraza,img/t2.1.webp,ApartaHotel,Tampere,159
+9,Estudio Deluxe,img/t3.1.webp,ApartaHotel,Tampere,115
+10,Habitación glamurosa en el casco antiguo,img/p1.1.webp,Hotel,Praga,139
+11,Habitación cuádruple en Archibald At the Charles Bridge,img/p2.1.webp,Hotel,Praga,143
+12,
+13,
+14,
+15,
+16,
+17,
+18,
+19,
+20,
+21,
