@@ -140,7 +140,7 @@ let datosCards = [
         precioPorNoche: 95
     },
     {
-        nombreViaje: "Apartamento de 2 dormitorios, Apartahotel",
+        nombreViaje: "Apartamento de 2 dormitorios",
         imagenPrincipal: "img/z3.1.webp",
         tipoEstancia: "ApartaHotel",
         ubicacion: "Zamzíbar",
