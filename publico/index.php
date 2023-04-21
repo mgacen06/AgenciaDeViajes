@@ -1,5 +1,7 @@
 <?php
 
+    require_once("Database.php");
+    $resultado=Database::getAllEstancias();
 
 
 ?>
@@ -48,7 +50,7 @@
     <nav id="elNav">
     </nav>
     <main>
-        <h1><strong id="titulo">Viajes Lario prueba</strong></h1>
+        <h1><strong id="titulo">Viajes Lario</strong></h1>
         <div class="buscador">
             <button type="button" class="button1">Buscar</button>
             </button>

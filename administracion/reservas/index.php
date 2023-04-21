@@ -1,7 +1,9 @@
 <?php
-require('Database.php');
 
-$database = new Database();
+    require_once("Database.php");
+    $resultado=Database::getAllReservas();
+
+
 ?>
 
 <!DOCTYPE html>
@@ -25,9 +27,8 @@ $database = new Database();
         </tbody>
         <tbody class= "contenido">
             <?php 
-            $tabla = $database-> getAllReservas();
 
-            foreach ($tabla as $fila){
+            foreach ($resultado as $fila){
                 // opcional con las comillas dobles las diferencio con barra invertida si las quiero usar dentro de un string
                 echo "<tr>";
                 for($i = 0; $i< 5 ; $i++){

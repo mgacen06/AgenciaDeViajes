@@ -1,10 +1,9 @@
 <?php
 
-    //PARA DECIRLE IMPORTAR DATABASE:
-    require('Database.php');
+    require_once("Database.php");
+    $resultado=Database::getAllEstancias();
 
-    $database = new Database();
-    // $resultado = $database -> getAll();
+
 ?>
 
 <!DOCTYPE html>
@@ -29,9 +28,8 @@
         </tbody>
         <tbody class= "contenido">
             <?php 
-            $tabla = $database-> getAllEstancias();
 
-            foreach ($tabla as $fila){
+            foreach ($resultado as $fila){
                 // opcional con las comillas dobles las diferencio con barra invertida si las quiero usar dentro de un string
                 echo "<tr>";
                 for($i = 0; $i< 5 ; $i++){
