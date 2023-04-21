@@ -1,12 +1,13 @@
 <?php
 
-    require_once("Database.php");
-    $resultado=Database::getAllEstancias();
+require_once("../administracion/Database/Database.php");
+$resultado = Database::getAllEstancias();
 
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,6 +47,7 @@
                     div     .maps
                 
 -->
+
 <body>
     <nav id="elNav">
     </nav>
@@ -56,13 +58,40 @@
             </button>
             <div class="lineav"></div>
             <div class="filtrosBuscador">
-                <input type="text"  placeholder="¿Qué fecha te gustaría alojarte?">
+                <input type="text" placeholder="¿Qué fecha te gustaría alojarte?">
                 <div class="lineah"></div>
                 <input type="text" class="destino" id="destino" name="destino" placeholder="Destino">
                 <div></div>
             </div>
         </div>
-        <div class="ofertaViajes"></div>
+        <div class="ofertaViajes">
+            <table class="tabla">
+                <thead class="cabecera">
+                    <th>ID</th>
+                    <th>id</th>
+                    <th>NoombreViaje</th>
+                    <th>Imagen</th>
+                    <th>tipoEstancia</th>
+                    <th>Ubicación</th>
+                    <th>Precio</th>
+                </thead>
+                </tbody>
+                <tbody class="contenido">
+                    <?php
+
+                    foreach ($resultado as $fila) {
+                        // opcional con las comillas dobles las diferencio con barra invertida si las quiero usar dentro de un string
+                        echo "<tr>";
+                        for ($i = 0; $i < 5; $i++) {
+                            echo "<td>" . $fila[$i] . "</td>";
+                        }
+                        echo "</tr>";
+                    }
+                    ?>
+                </tbody>
+            </table>
+
+        </div>
     </main>
     <footer>
         <div class="redesSociales">
@@ -78,10 +107,11 @@
             </div>
             <div></div>
             <br>
-            <small >Copyright © 2022 Empresa de venta de alojamientos. Todos los derechos reservados. C/ Bernardino Obregón 25, 28012. Madrid, España</small>
+            <small>Copyright © 2022 Empresa de venta de alojamientos. Todos los derechos reservados. C/ Bernardino Obregón 25, 28012. Madrid, España</small>
         </div>
     </footer>
 </body>
 <script src="navYFooter.js"></script>
 <script src="app.js"></script>
+
 </html>
