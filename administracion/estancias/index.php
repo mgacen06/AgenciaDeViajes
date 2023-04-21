@@ -1,7 +1,7 @@
 <?php
 
     require_once("../Database/Database.php");
-    $resultado=Database::getAllEstancias();
+    $resultado=Database::getAllAlojamientos();
 
 
 ?>

@@ -1,7 +1,7 @@
 <?php
 
 require_once("../administracion/Database/Database.php");
-$resultado = Database::getAllEstancias();
+$resultado = Database::getAllAlojamientos();
 
 
 ?>
@@ -112,6 +112,6 @@ $resultado = Database::getAllEstancias();
     </footer>
 </body>
 <script src="navYFooter.js"></script>
-<script src="app.js"></script>
+<!-- <script src="app.js"></script> -->
 
 </html>

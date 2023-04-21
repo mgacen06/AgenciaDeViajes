@@ -23,9 +23,9 @@ class Database
         return $gbd;
     }
 
-    public static function getAllEstancias()
+    public static function getAllAlojamientos()
     {
-        $sql = "SELECT * FROM estancias";
+        $sql = "SELECT * FROM alojamientos";
         return self::conectar()->query($sql);
 
     }
