@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(127, 147, 185);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    align-content: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.tabla{
+    border: 2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+.cabecera{
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(117, 58, 144);
+    font-size: 17px;
+}
+.contenido{
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: white;
+}
+th, tr, td{
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 0);
+}
