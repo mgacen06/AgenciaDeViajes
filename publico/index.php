@@ -3,7 +3,6 @@
 require_once("../administracion/Database/Database.php");
 $resultado = Database::getAllAlojamientos();
 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,35 +17,6 @@ $resultado = Database::getAllAlojamientos();
     <link rel="shortcut icon" href="img/icono.ico" type="" id="icono">
     <title>Viajes Lario</title>
 </head>
-
-<!-- Estructura de estilos del programa:
-    body    Para el body su nombre
-        nav     Para el nav su nombre
-            ul      .ulnav
-                li      .linav
-        main    Para el main su nombre
-            div     .buscador   El buscador por diferentes filtros
-                button  .botonBuscador
-                div     .filtrosBuscador
-                    div     .filtro
-                    div     .filtro
-                    div     .filtro
-            div     .ofertaViajes   Donde estan todos los viajes
-                div     .card   La card de cada viaje
-                    img     .imagen     La imagen principal del viaje
-                    div     .info      El cuadro donde esta la informacion
-                        h4      .titulo
-                        small   .estancia   Tipo de estancia
-                        p       .lugar      Lugar del viaje
-                        div     .precio     
-        footer  Para el footer su nombre
-            div     .redesSociales  Espacio para las redes sociales de la web
-                a       .redes      
-                div     .infoFooter
-                    div     .about
-                    div     .maps
-                
--->
 
 <body>
     <nav id="elNav"></nav>
@@ -66,7 +36,6 @@ $resultado = Database::getAllAlojamientos();
         <div class="ofertaViajes">
             <?php
             foreach ($resultado as $fila) {
-
                 echo "<div class='card'>";
                     echo "<img class='imagen' alt='Avatar' src=" . $fila['imagen'] . "></img>";
                     echo "<div class='info'>";
@@ -100,5 +69,4 @@ $resultado = Database::getAllAlojamientos();
 </body>
 <script src="navYFooter.js"></script>
 <script src="app.js"></script>
-
 </html>
