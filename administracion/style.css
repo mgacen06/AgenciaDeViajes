@@ -1,9 +1,8 @@
 body{
     background-color: rgb(127, 147, 185);
-    height: 100vh;
     display: flex;
     align-items: center;
-    margin: 0px;
+    margin: 40px;
     align-content: center;
     justify-content: center;
     font-family: sans-serif;
@@ -11,7 +10,6 @@ body{
 .tabla{
     border: 2px solid rgb(0, 0, 0);
     border-collapse: collapse;
-    border-radius: 10px;
 }
 .cabecera{
     text-align: center;

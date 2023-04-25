@@ -12,16 +12,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/administracion/style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Alojamientos</title>
 </head>
 <body>
 <table class="tabla">
         <thead class="cabecera">
-            <th>ID</th>
+            <th>id</th>
             <th>NombreViaje</th>
             <th>Imagen</th>
-            <th>tipoEstancia</th>
+            <th>TipoEstancia</th>
             <th>Ubicación</th>
             <th>Precio</th>
         </thead>
