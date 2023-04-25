@@ -25,7 +25,6 @@
             <th>Ubicación</th>
             <th>Precio</th>
         </thead>
-        </tbody>
         <tbody class= "contenido">
             <?php 
 
