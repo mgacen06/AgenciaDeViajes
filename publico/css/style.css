@@ -6,7 +6,7 @@
         flex-direction: column;
         font-family: sans-serif;
         height: auto;
-        /* width: 100vw; */
+        width: 100%;
         margin: 0px;
         padding: 0px;
         background: linear-gradient(90deg, rgba(187, 150, 218, 0.8885679271708683) 20%, rgba(168, 150, 221, 1) 52%, rgba(131, 132, 222, 1) 79%);
@@ -15,10 +15,9 @@
     /* Contenido del nav */
     nav {
         display: flex;
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
         width: 100%;
         margin: 0px;
-        padding: 2px;
         background-color: black;
     }
 
@@ -28,7 +27,6 @@
         list-style: none;
         margin: 4px 10px 4px 10px;
         padding-left: 0px;
-        width: 600px;
     }
 
     .linav {
@@ -50,7 +48,7 @@
     main {
         display: flex;
         flex-direction: column;
-        margin: 5px;
+        margin: 0px;
         width: 100%;
         align-content: center;
         align-items: center;
@@ -309,7 +307,7 @@
         flex-direction: column;
         font-family: sans-serif;
         height: auto;
-        width: 100vw;
+        width: 100%;
         margin: 0px;
         /* fondo degradado */
         background: linear-gradient(90deg, rgba(187, 150, 218, 0.8885679271708683) 20%, rgba(168, 150, 221, 1) 52%, rgba(131, 132, 222, 1) 79%);
@@ -319,9 +317,8 @@
     /* Contenido del nav */
     nav {
         display: flex;
-        width: 97vw;
+        width: 100%;
         margin: 0px;
-        padding: 2px;
         background-color: black;
     }
 
@@ -332,7 +329,7 @@
         margin: 0px;
         padding-left: 0px;
         margin-bottom: 10px;
-        width: 100vw;
+        width: 100%;
         justify-content: space-between;
 
     }
@@ -354,8 +351,8 @@
     main {
         display: flex;
         flex-direction: column;
-        margin: 5px;
-        width: 100vw;
+        margin: 0px;
+        width: 100%;
         align-content: center;
         align-items: center;
     }
@@ -368,7 +365,7 @@
         align-content: center;
         align-items: center;
         background-color: rgb(0, 0, 0);
-        width: 100vw;
+        width: 100%;
         margin: 0px;
     }
 
