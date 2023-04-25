@@ -11,7 +11,7 @@ body{
 }
 
 #admin{
-font-family: ;
+/* font-family: ; */
   text-align: center;
   background-image: linear-gradient(to bottom, #775bc3, #ceb7e4);
   color: transparent;

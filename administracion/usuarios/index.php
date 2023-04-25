@@ -15,14 +15,14 @@
 </head>
 <body>
 <thead class="cabecera">
-            <th>ID</th>
+            <th>ID</th><
             <th>DNI</th>
             <th>nombre</th>
-            <th>Correo</th>
             <th>Apellidos</th>
             <th>Correo</th>
             <th>Contraseña</th>
             <th>Ubicación</th>
+            <br>
         </thead>
         </tbody>
         <tbody class= "contenido">
@@ -31,10 +31,10 @@
             foreach ($resultado as $fila){
                 // opcional con las comillas dobles las diferencio con barra invertida si las quiero usar dentro de un string
                 echo "<tr>";
-                for($i = 0; $i< 8 ; $i++){
+                for($i = 0; $i< 7 ; $i++){
                     echo "<td>". $fila[$i] . "</td>";
                 }
-                echo "</tr>";
+                echo "</tr><br>";
             }
             ?>
             </tbody>

@@ -231,6 +231,7 @@
 
     .titulo {
         margin-top: 0px;
+        font-weight: bolder;
     }
 
     .precio {
@@ -547,6 +548,7 @@
 
     .titulo {
         margin-top: 0px;
+        font-weight: bolder;
     }
 
     .precio {

@@ -49,8 +49,7 @@ $resultado = Database::getAllAlojamientos();
 -->
 
 <body>
-    <nav id="elNav">
-    </nav>
+    <nav id="elNav"></nav>
     <main>
         <h1><strong id="titulo">Viajes Lario</strong></h1>
         <div class="buscador">
@@ -65,32 +64,20 @@ $resultado = Database::getAllAlojamientos();
             </div>
         </div>
         <div class="ofertaViajes">
-            <table class="tabla">
-                <thead class="cabecera">
-                    <th>ID</th>
-                    <th>id</th>
-                    <th>NoombreViaje</th>
-                    <th>Imagen</th>
-                    <th>tipoEstancia</th>
-                    <th>Ubicación</th>
-                    <th>Precio</th>
-                </thead>
-                </tbody>
-                <tbody class="contenido">
-                    <?php
+            <?php
+            foreach ($resultado as $fila) {
 
-                    foreach ($resultado as $fila) {
-                        // opcional con las comillas dobles las diferencio con barra invertida si las quiero usar dentro de un string
-                        echo "<tr>";
-                        for ($i = 0; $i < 5; $i++) {
-                            echo "<td>" . $fila[$i] . "</td>";
-                        }
-                        echo "</tr>";
-                    }
-                    ?>
-                </tbody>
-            </table>
-
+                echo "<div class='card'>";
+                    echo "<img class='imagen' alt='Avatar' src=" . $fila['imagen'] . "></img>";
+                    echo "<div class='info'>";
+                        echo "<h4 class='titulo'>" . $fila['nombreViaje'] . "</h4>";
+                        echo "<small>" . $fila['tipoEstancia'] . "</small>";
+                        echo "<p id='lugar'>" . $fila['ubicacion'] . "</p>";
+                        echo "<div class='precio'>" . $fila['precioPorNoche'] . " €</div>";
+                    echo "</div>";
+                echo "</div>";
+            }
+            ?>
         </div>
     </main>
     <footer>
@@ -112,6 +99,6 @@ $resultado = Database::getAllAlojamientos();
     </footer>
 </body>
 <script src="navYFooter.js"></script>
-<!-- <script src="app.js"></script> -->
+<script src="app.js"></script>
 
 </html>

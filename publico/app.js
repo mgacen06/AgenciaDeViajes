@@ -148,47 +148,6 @@ let datosCards = [
     }
 ]
 
-let ofertaViajes = document.getElementsByClassName("ofertaViajes")[0];
-ofertaViajes.addEventListener("load", crearCards());
-
-function crearCards() {
-    for (i in datosCards) {
-        let card = document.createElement("div");
-        card.setAttribute("class", "card");
-        
-        let img = document.createElement("img");
-        img.setAttribute("src", datosCards[i].imagenPrincipal);
-        img.setAttribute("alt", "Avatar");
-        img.setAttribute("class", "imagen")
-
-        let info = document.createElement("div");
-        info.setAttribute("class", "info");
-
-        let titulo = document.createElement("h4");
-        titulo.setAttribute("class", "titulo");
-        titulo.style.fontWeight = "bolder";
-        titulo.textContent = datosCards[i].nombreViaje;
-
-        let estancia = document.createElement("small");
-        estancia.textContent = datosCards[i].tipoEstancia;
-
-        let lugar = document.createElement("p");
-        lugar.setAttribute("id", "lugar");
-        lugar.textContent = datosCards[i].ubicacion;
-
-        let precio = document.createElement("div");
-        precio.setAttribute("class", "precio");
-        precio.textContent = `${datosCards[i].precioPorNoche} € / noche`;
-
-        info.appendChild(titulo);
-        info.appendChild(estancia);
-        info.appendChild(lugar);
-        info.appendChild(precio);
-        card.appendChild(img);
-        card.appendChild(info);
-        ofertaViajes.appendChild(card);
-    }
-}
 
 // Buscador
 let destino = document.getElementsByClassName("destino")[0];
