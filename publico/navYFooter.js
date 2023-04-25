@@ -6,7 +6,7 @@ ulNav.setAttribute("class","ulnav");
 let liInicio=document.createElement("li");
 let aInicio=document.createElement("a");
 aInicio.setAttribute("class","linav");
-aInicio.setAttribute("href","index.html");
+aInicio.setAttribute("href","index.php");
 aInicio.textContent="Inicio";
 let iInicio=document.createElement("i");
 iInicio.setAttribute("id","icono");
@@ -57,5 +57,3 @@ liLogin.appendChild(aLogin);
 ulNav.appendChild(liLogin);
 
 elNav.appendChild(ulNav);
-
-console.log("hola esto es el nav");
