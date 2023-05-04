@@ -1,3 +1,7 @@
+/* Para que los links no aparezcan subrayados */
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
 @media (min-width:1284px) {
 
     /* Contenido del body */
@@ -12,38 +16,6 @@
         background: linear-gradient(90deg, rgba(187, 150, 218, 0.8885679271708683) 20%, rgba(168, 150, 221, 1) 52%, rgba(131, 132, 222, 1) 79%);
     }
 
-    /* Contenido del nav */
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: 0px;
-        background-color: black;
-    }
-
-    .ulnav {
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-        margin: 4px 10px 4px 10px;
-        padding-left: 0px;
-    }
-
-    .linav {
-        display: flex;
-        padding: 10px;
-        margin: 2px 5px 2px 5px;
-        font-size: large;
-        font-size: 20px;
-        color: white;
-    }
-
-    .linav:hover {
-        border-bottom: white solid 2px;
-
-        color: rgb(209, 180, 241)
-    }
-
     /* Contenido del main */
     main {
         display: flex;
@@ -52,83 +24,10 @@
         width: 100%;
         align-content: center;
         align-items: center;
-    }
-
-    /* Contenido del footer */
-    footer {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-        background-color: rgb(0, 0, 0);
-        width: 100%;
-        margin: 0px;
-    }
-
-    .redesSociales {
-        /* instagram + twitter */
-        display: flex;
-        flex-wrap: wrap;
-        width: auto;
-        background-color: rgb(255, 255, 255);
-        margin-top: 10px;
-        /* bordes */
-        border: 2px solid rgb(200, 199, 226);
-        border-radius: 50px;
-    }
-
-    .redes {
-        display: flex;
-        margin: 5px;
-        padding: 5px;
-        border: 2px solid rgb(200, 199, 226);
-        border-radius: 50px;
-    }
-
-    .redes:hover {
-        background-color: rgb(44, 79, 104);
-        color: #ffffff;
-    }
-
-    .infoFooter {
-        display: flex;
-        align-items: center;
-        margin: 15px;
-        padding: 10px;
-        border-radius: 25px;
-        flex-direction: column;
-    }
-
-    #aboutus {
-        justify-content: left;
-        align-items: center;
-        margin: 15px;
-        padding: 10px;
-        background-color: #ffffff;
-        border: 1px solid rgb(54, 49, 49);
-        border-radius: 25px;
-    }
-
-    /* pseudoelementos */
-    #aboutus::first-letter {
-        color: brown;
-        font-size: 20px;
-    }
-
-    /* Para que los links no aparezcan subrayados */
-    a:link,
-    a:visited,
-    a:active {
-        text-decoration: none;
-    }
-
-    /* Espacio del icono respecto al resto */
-    #botontw {
-        margin-right: 5px;
-    }
+    }    
 
     /*style del index*/
+
     .button1 {
         /* botón ovalado morado, con bordes negros, icono búsqueda negro y letra blanca */
         width: 90px;
@@ -137,9 +36,11 @@
         padding: 10px 10px 10px 10px;
         margin: 10px 10px 10px 10px;
         /* borde */
-        border-radius: 30px;
-        border: 2px solid rgb(45, 44, 74);
-        background-color: rgb(137, 91, 222);
+        border-radius: 20px;
+        border: 2px solid rgb(0, 0, 0);
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-weight: 700;
     }
 
     .button1:hover {
@@ -169,7 +70,7 @@
         background-color: white;
         /* BORDES SECCIÓN ARRIBA */
         border: 2px solid rgb(200, 199, 226);
-        border-radius: 40px;
+        border-radius: 25px;
         height: 90px;
         width: 500px;
     }
@@ -237,7 +138,7 @@
         padding: 10px;
         margin-top: 10px;
         margin-bottom: 0px;
-        border-radius: 30px 0px 30px 0px;
+        border-radius: 15px 0px 15px 0px;
         border: 1px solid #ffffff;
         background-color: rgb(0, 0, 0);
         color: rgb(250, 250, 250);
@@ -296,8 +197,7 @@
 
 @media (max-width:1283px) {
 
-    #icono,
-    #botontw {
+    #icono{
         display: none;
     }
 
@@ -314,39 +214,6 @@
 
     }
 
-    /* Contenido del nav */
-    nav {
-        display: flex;
-        width: 100%;
-        margin: 0px;
-        background-color: black;
-    }
-
-    .ulnav {
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-        margin: 0px;
-        padding-left: 0px;
-        margin-bottom: 10px;
-        width: 100%;
-        justify-content: space-between;
-
-    }
-
-    .linav {
-        display: flex;
-        padding: 10px;
-        margin: 10px 5px 10px 5px;
-        font-size: 20px;
-        color: white;
-    }
-
-    .linav:hover {
-        border-bottom: #ffffff solid 2px;
-        color: #ccaff2;
-    }
-
     /* Contenido del main */
     main {
         display: flex;
@@ -358,79 +225,7 @@
     }
 
     /* Contenido del footer */
-    footer {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-        background-color: rgb(0, 0, 0);
-        width: 100%;
-        margin: 0px;
-    }
-
-    .redesSociales {
-        /* instagram + twitter */
-        display: flex;
-        flex-wrap: wrap;
-        width: auto;
-        margin-top: 10px;
-        color: #ffffff;
-    }
-
-    .redes {
-        color: white;
-        display: flex;
-        margin: 5px;
-        padding: 5px;
-        border-radius: 50px;
-        justify-content: right;
-
-    }
-
-    .redes:hover {
-        background-color: rgb(44, 79, 104);
-        color: #ffffff;
-    }
-
-    .infoFooter {
-        display: flex;
-        align-items: center;
-        margin: 15px;
-        padding: 10px;
-        border-radius: 25px;
-        flex-direction: column;
-        color: white;
-    }
-
-    #aboutus {
-        justify-content: left;
-        align-items: center;
-        margin: 15px;
-        padding: 10px;
-        color: #ffffff;
-        border: 1px solid rgb(54, 49, 49);
-        border-radius: 25px;
-    }
-
-    /* pseudoelementos */
-    #aboutus::first-letter {
-        color: brown;
-        font-size: 20px;
-    }
-
-    /* Para que los links no aparezcan subrayados */
-    a:link,
-    a:visited,
-    a:active {
-        text-decoration: none;
-    }
-
-    /* Espacio del icono respecto al resto */
-    #botontw {
-        margin-right: 5px;
-    }
-
+    
     /*style del index*/
     .button1 {
         /* botón ovalado morado, con bordes negros, icono búsqueda negro y letra blanca */
@@ -440,10 +235,12 @@
         padding: 10px 10px 10px 10px;
         margin: 10px 10px 10px 10px;
         /* borde */
-        border-radius: 30px;
-        border: 2px solid rgb(45, 44, 74);
+        border-radius: 20px;
+        border: 2px solid rgb(0, 0, 0);
         background-color: rgb(0, 0, 0);
-        color: #ffffff;
+        color: white;
+        font-weight: 700;
+
     }
 
     .button1:hover {
@@ -481,7 +278,7 @@
         background-color: white;
         /* BORDES SECCIÓN ARRIBA */
         border: 2px solid rgb(200, 199, 226);
-        border-radius: 40px;
+        border-radius: 25px;
         height: 90px;
         width: 500px;
     }
@@ -553,7 +350,7 @@
         padding: 10px;
         margin-top: 10px;
         margin-bottom: 0px;
-        border-radius: 30px 0px 30px 0px;
+        border-radius: 15px 0px 15px 0px;
         border: 1px solid #ffffff;
         background-color: rgb(0, 0, 0);
         color: rgb(250, 250, 250);

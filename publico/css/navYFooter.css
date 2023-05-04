@@ -1,0 +1,89 @@
+/**** Css del nav ****/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px;
+    background-color: black;
+}
+
+.ulnav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 4px 10px 4px 10px;
+    padding-left: 0px;
+}
+
+.linav {
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+    font-size: 23px;
+    color: white;
+}
+
+.linav:hover {
+    border-bottom: white solid 2px;
+    color: rgb(209, 180, 241);
+}
+
+
+/**** Css del footer ****/
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    margin: 0px;
+}
+
+.redesSociales {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin-top: 5px;
+}
+
+.redes {
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgb(54, 49, 49);
+    border-radius: 10px;
+}
+
+.redes:hover {
+    background-color: rgb(187, 150, 218);
+    color: #ffffff;
+}
+
+.infoFooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#aboutus {
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(54, 49, 49);
+    border-radius: 10px;
+}
+
+#aboutus::first-letter {
+    color: brown;
+    font-size: 20px;
+}
+
+#botontw {
+    margin-right: 5px;
+}
