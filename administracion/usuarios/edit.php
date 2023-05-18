@@ -1,7 +1,7 @@
 <?php
 
 $id = $_GET['id'];
-require_once('Database.php');
+require_once('../Database/Database.php');
 $alojamiento= Database::findById($id);
         /*
         nombreViaje varchar(45) NOT NULL,
@@ -17,6 +17,7 @@ $alojamiento= Database::findById($id);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Edit</title>
 </head>
 <body>

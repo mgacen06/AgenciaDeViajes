@@ -14,7 +14,7 @@ $resultado = Database::getAllUsuarios();
     <title>Usuarios</title>
 </head>
 <body>
-    <a href="edit.php">Crear</a>
+    <a href="create.php">Crear</a>
     <table class="tabla">
         <thead class="cabecera">
             <th>id</th>
