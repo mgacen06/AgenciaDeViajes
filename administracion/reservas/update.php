@@ -1,4 +1,17 @@
+<?php 
+
+$datos = [$_POST['id'], $_POST['fechaInicio'], $_POST['fechaFin'],$_POST['usuarios_id'], $_POST['alojamientos_id']];
+      
+require_once('Database.php');
+Database::update($datos);
+header('Location: index.php');
+
+?>
 <!DOCTYPE html>
+    <!--  fechaInicio DATE NOT NULL,
+ fechaFin DATE NOT NULL,
+ usuarios_id INT NOT NULL,
+ alojamientos_id INT NOT NULL, -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">

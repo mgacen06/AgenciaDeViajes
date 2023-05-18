@@ -1,3 +1,10 @@
+<?php
+
+$id = $_GET['id'];
+require_once('../Database/Database.php');
+$reserva= Database::findById($id);
+        
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +15,17 @@
     <title>Edit</title>
 </head>
 <body>
+    <!--  fechaInicio DATE NOT NULL,
+ fechaFin DATE NOT NULL,
+ usuarios_id INT NOT NULL,
+ alojamientos_id INT NOT NULL, -->
     <a href="index.php">Atrás</a>
+    <input type="hidden" name="id" value = "<?php echo $reserva['id']?>">
+    <input type="text" name="fechaInicio" placeholder="modificar fecha inicio " value = "<?php echo $reserva['fechaInicio']?>">
+    <input type="text" name="fechaFin" placeholder="modificar fecha fin" value = "<?php echo $reserva['fechaFin']?>">
+    <input type="text" name="usuarios_id" placeholder="modificar us.id" value = "<?php echo $reserva['usuarios_id']?>">
+    <input type="text" name="alojamientos_id" placeholder="modificar aloj.id" value = "<?php echo $reserva['alojamientos_id']?>">
+    <button class="btn" type="submit">Enviar</button>
+
 </body>
 </html>

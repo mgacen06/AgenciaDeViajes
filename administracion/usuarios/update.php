@@ -1,6 +1,6 @@
 <?php 
 
-$datos = [$_POST['id'], $_POST['nombreViaje'], $_POST['imagen'],$_POST['tipoEstancia'],$_POST['ubicacion'],$_POST['precioPorNoche']];
+$datos = [$_POST['id'], $_POST['dni'], $_POST['nombre'],$_POST['apellidos'],$_POST['correo'],$_POST['contrasenia'], $_POST['direccion']];
       
 require_once('Database.php');
 Database::update($datos);

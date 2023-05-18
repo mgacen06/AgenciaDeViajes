@@ -2,14 +2,7 @@
 
 $id = $_GET['id'];
 require_once('../Database/Database.php');
-$alojamiento= Database::findById($id);
-        /*
-        nombreViaje varchar(45) NOT NULL,
-        imagen varchar(45) NOT NULL,
-        tipoEstancia varchar(15) NOT NULL,
-        ubicacion varchar(45),
-        precioPorNoche DOUBLE NOT NULL,
-        */
+$usuario= Database::findById($id);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +21,7 @@ $alojamiento= Database::findById($id);
         -->
         <!-- pasas un valor que no se ve -->
         <!-- 
-            dni varchar(10) NOT NULL UNIQUE,
+dni varchar(10) NOT NULL UNIQUE,
  nombre varchar(25) NOT NULL,
  apellidos varchar(45),
  correo varchar(45) NOT NULL UNIQUE,
@@ -37,12 +30,13 @@ $alojamiento= Database::findById($id);
 
         --> 
         
-        <input type="hidden" name="id" value = "<?php echo $alojamiento['id']?>">
-        <input type="text" name="ndni" placeholder="modificar nombre " value = "<?php echo $alojamiento['nombreViaje']?>">
-        <input type="text" name="nombre" placeholder="modificar imagen" value = "<?php echo $alojamiento['imagen']?>">
-        <input type="text" name="apellidos" placeholder="modificar tipo estancia" value = "<?php echo $alojamiento['tipoEstancia']?>">
-        <input type="text" name="correo" placeholder="modificar ubicacion" value = "<?php echo $alojamiento['ubicacion']?>">
-        <input type="text" name="contrasenia" placeholder="modificar precio/noche" value = "<?php echo $alojamiento['precioPorNoche']?>">
+        <input type="hidden" name="id" value = "<?php echo $usuario['id']?>">
+        <input type="text" name="dni" placeholder="modificar dni " value = "<?php echo $usuario['dni']?>">
+        <input type="text" name="nombre" placeholder="modificar nombre" value = "<?php echo $usuario['nombre']?>">
+        <input type="text" name="apellidos" placeholder="modificar apellidos" value = "<?php echo $usuario['apellidos']?>">
+        <input type="text" name="correo" placeholder="modificar correo" value = "<?php echo $usuario['correo']?>">
+        <input type="text" name="contrasenia" placeholder="modificar contraseña" value = "<?php echo $usuario['contrasenia']?>">
+        <input type="text" name="direccion" placeholder="modificar direccion" value = "<?php echo $usuario['direccion']?>">
         <button class="btn" type="submit">Enviar</button> 
     </form>
 </body>

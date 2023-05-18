@@ -16,6 +16,7 @@
     <title>Reservas</title>
 </head>
 <body>
+<a href="create.php">Crear</a>
 <table class="tabla">
 <thead class="cabecera">
                 <th>id</th>
@@ -34,6 +35,7 @@
                 for($i = 0; $i< 5 ; $i++){
                     echo "<td>". $fila[$i] . "</td>";
                 }
+                echo "<td class=btns> <a class='btn' href='edit.php?id=".$fila['id']."'>Editar</a> <a class='btn' href='delete.php?id=".$fila['id']."'>Eliminar</a></td>";
                 echo "</tr>";
             }
             ?>

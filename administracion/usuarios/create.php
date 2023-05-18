@@ -13,11 +13,12 @@
             METHOD:
             ACTION: fichero que gestiona los datos
         -->
-        <input type="text" name ="nombreViaje" placeholder="inserta una nombre">
-        <input type="text" name = "imagen" placeholder="inserta una imagen">
-        <input type="text" name ="tipoEstancia" placeholder="inserta un tipo">
-        <input type="text" name="ubicacion" placeholder="inserta una ubicación">
-        <input type="text" name="precioPorNoche" placeholder="inserta un precio/noche">
+        <input type="text" name="dni" placeholder="modificar dni ">
+        <input type="text" name="nombre" placeholder="modificar nombre" >
+        <input type="text" name="apellidos" placeholder="modificar apellidos" >
+        <input type="text" name="correo" placeholder="modificar correo" >
+        <input type="text" name="contrasenia" placeholder="modificar contraseña" >
+        <input type="text" name="direccion" placeholder="modificar direccion" >
         <button class="btn" type="submit">Enviar</button> 
     </form>
 </body>
