@@ -27,13 +27,22 @@ $alojamiento= Database::findById($id);
             ACTION: fichero que gestiona los datos
         -->
         <!-- pasas un valor que no se ve -->
-        <!-- poner name -->
+        <!-- 
+            dni varchar(10) NOT NULL UNIQUE,
+ nombre varchar(25) NOT NULL,
+ apellidos varchar(45),
+ correo varchar(45) NOT NULL UNIQUE,
+ contrasenia varchar(45),
+ direccion varchar(45) NOT NULL,
+
+        --> 
+        
         <input type="hidden" name="id" value = "<?php echo $alojamiento['id']?>">
-        <input type="text" name="nombreViaje" placeholder="modificar nombre " value = "<?php echo $alojamiento['nombreViaje']?>">
-        <input type="text" name="imagen" placeholder="modificar imagen" value = "<?php echo $alojamiento['imagen']?>">
-        <input type="text" name="tipoEstancia" placeholder="modificar tipo estancia" value = "<?php echo $alojamiento['tipoEstancia']?>">
-        <input type="text" name="ubicacion" placeholder="modificar ubicacion" value = "<?php echo $alojamiento['ubicacion']?>">
-        <input type="text" name="precioPorNoche" placeholder="modificar precio/noche" value = "<?php echo $alojamiento['precioPorNoche']?>">
+        <input type="text" name="ndni" placeholder="modificar nombre " value = "<?php echo $alojamiento['nombreViaje']?>">
+        <input type="text" name="nombre" placeholder="modificar imagen" value = "<?php echo $alojamiento['imagen']?>">
+        <input type="text" name="apellidos" placeholder="modificar tipo estancia" value = "<?php echo $alojamiento['tipoEstancia']?>">
+        <input type="text" name="correo" placeholder="modificar ubicacion" value = "<?php echo $alojamiento['ubicacion']?>">
+        <input type="text" name="contrasenia" placeholder="modificar precio/noche" value = "<?php echo $alojamiento['precioPorNoche']?>">
         <button class="btn" type="submit">Enviar</button> 
     </form>
 </body>
