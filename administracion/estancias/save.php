@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/administracion/style.css">
-    <title>Save</title>
-</head>
-<body>
-    <a href="index.php">Atrás</a>
-</body>
-</html>
+<?php
+    // 1. Recoger todos los elementos del formulario
+    $datos = [$_POST['nombreViaje'], $_POST['imagen'], $_POST['tipoEstancia'], $_POST['ubicacion'], $_POST['precioPorNoche']];
+    // 2. Importar la clase Database.php
+    require_once('../Database/Database.php');
+
+    // 3. Invocar la funcion save de Database llevandole los datos
+    Database::save($datos);
+
+    // 4. Retornar al index.php
+    header('Location: index.php');
+?>

@@ -1,5 +1,5 @@
 <?php
-echo 'Hemos recogido el valor del id: : '. $_GET['id'];
+echo 'Hemos recogido el valor del id: '. $_GET['id'];
 // 1. recoger el id de la url-> ver si existe y en tal caso recogerlo
 $id_valor = $_GET['id'];
 

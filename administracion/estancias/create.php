@@ -9,5 +9,17 @@
 </head>
 <body>
     <a href="index.php">Atrás</a>
+    <form action="save.php" method ="POST">
+        <!-- 
+            METHOD:
+            ACTION: fichero que gestiona los datos
+        -->
+        <input type="text" name ="nombreViaje" placeholder="inserta una nombre">
+        <input type="text" name = "imagen" placeholder="inserta una imagen">
+        <input type="text" name ="tipoEstancia" placeholder="inserta un tipo">
+        <input type="text" name="ubicacion" placeholder="inserta una ubicación">
+        <input type="text" name="precioPorNoche" placeholder="inserta un precio/noche">
+        <button class="btn" type="submit">Enviar</button> 
+    </form>
 </body>
 </html>
