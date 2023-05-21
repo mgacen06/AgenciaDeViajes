@@ -26,7 +26,6 @@ $resultado = Database::getAllAlojamientos();
         <a id="titulo" href="index.php">Viajes Lario</a>
         <div class="buscador">
             <button type="button" class="button1">Buscar</button>
-            </button>
             <div class="lineav"></div>
             <div class="filtrosBuscador">
                 <input type="text" placeholder="¿Qué fecha te gustaría alojarte?">
