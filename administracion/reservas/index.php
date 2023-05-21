@@ -12,34 +12,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/hogar.ico" type="" id="icono">
     <link rel="stylesheet" href="../style.css">
     <title>Reservas</title>
 </head>
 <body>
-<a href="create.php">Crear</a>
-<table class="tabla">
-<thead class="cabecera">
-                <th>id</th>
-                <th>fechaInicio</th>
-                <th>FechaFin</th>
-                <th>UsuariosID</th>
-                <th>AlojamientosID</th>
-        </thead>
-        </tbody>
-        <tbody class= "contenido">
-            <?php 
-
-            foreach ($resultado as $fila){
-                // opcional con las comillas dobles las diferencio con barra invertida si las quiero usar dentro de un string
-                echo "<tr>";
-                for($i = 0; $i< 5 ; $i++){
-                    echo "<td>". $fila[$i] . "</td>";
-                }
-                echo "<td class=btns> <a class='btn' href='edit.php?id=".$fila['id']."'>Editar</a> <a class='btn' href='delete.php?id=".$fila['id']."'>Eliminar</a></td>";
-                echo "</tr>";
-            }
-            ?>
+    <nav>
+        <ul>
+            <li><a class="menuA" href="../menuAdmin.php">Administración</a></li>
+            <li><a class="menuA"  href="../estancias/index.php">Estancias</a></li>
+            <li><a class="menuA" href="index.php">Reservas</a></li> 
+            <li><a class="menuA" href="../usuarios/index.php">Usuarios</a></li> 
+        </ul>
+    </nav>
+    <main>
+        <h1><bold>Reservas</bold></h1>
+        <a href="create.php" class="btn">Crear</a>
+        <table class="tabla">
+        <thead class="cabecera">
+                    <th>id</th>
+                    <th>fechaInicio</th>
+                    <th>FechaFin</th>
+                    <th>UsuariosID</th>
+                    <th>AlojamientosID</th>
+                    <th>Acciones</th>
+            </thead>
             </tbody>
-    </table>
+            <tbody class= "contenido">
+                <?php 
+
+                foreach ($resultado as $fila){
+                    // opcional con las comillas dobles las diferencio con barra invertida si las quiero usar dentro de un string
+                    echo "<tr>";
+                    for($i = 0; $i< 5 ; $i++){
+                        echo "<td>". $fila[$i] . "</td>";
+                    }
+                    echo "<td class=btns> <a class='btn' href='edit.php?id=".$fila['id']."'>Editar</a> <a class='btn' href='delete.php?id=".$fila['id']."'>Eliminar</a></td>";
+                    echo "</tr>";
+                }
+                ?>
+                </tbody>
+        </table>
+    </main>
 </body>
 </html>

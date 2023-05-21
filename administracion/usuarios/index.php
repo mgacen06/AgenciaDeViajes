@@ -10,11 +10,22 @@ $resultado = Database::getAllUsuarios();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/hogar.ico" type="" id="icono">
     <link rel="stylesheet" href="../style.css">
     <title>Usuarios</title>
 </head>
 <body>
-    <a href="create.php">Crear</a>
+    <nav>
+        <ul>
+            <li><a class="menuA" href="../menuAdmin.php">Administración</a></li>
+            <li><a class="menuA"  href="../estancias/index.php">Estancias</a></li>
+            <li><a class="menuA" href="../reservas/index.php">Reservas</a></li> 
+            <li><a class="menuA" href="index.php">Usuarios</a></li> 
+        </ul>
+    </nav>
+    <main>
+    <h1><bold>Usuarios</bold></h1>
+    <a href="create.php" class="btn" >Crear</a>
     <table class="tabla">
         <thead class="cabecera">
             <th>id</th>
@@ -24,6 +35,7 @@ $resultado = Database::getAllUsuarios();
             <th>Correo</th>
             <th>Contraseña</th>
             <th>Ubicación</th>
+            <th>Acciones</th>
             <br>
         </thead>
         </tbody>
@@ -41,6 +53,7 @@ $resultado = Database::getAllUsuarios();
             ?>
         </tbody>
     </table>
+    </main>
 </body>
 
 </html>

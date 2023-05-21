@@ -13,6 +13,7 @@ let iInicio=document.createElement("i");
 iInicio.setAttribute("id","icono");
 iInicio.setAttribute("class","fa fa-plane");
 
+
 aInicio.appendChild(iInicio);
 liInicio.appendChild(aInicio);
 ulNav.appendChild(liInicio);

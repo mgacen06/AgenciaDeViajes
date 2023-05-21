@@ -7,8 +7,8 @@ class Database
         $driver = 'mysql';
         $host = 'localhost';
         $port = '3306';
-        $user = 'pfcAdmin';
-        $password = '1234';
+        $user = 'root';
+        $password = '';
         $db = 'agencia';
 
         $dsn = "$driver:dbname=$db;host=$host;port=$port";

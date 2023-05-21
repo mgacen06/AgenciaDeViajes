@@ -24,10 +24,12 @@ nav {
 }
 
 .linav:hover {
-    border-bottom: white solid 2px;
-    color: rgb(209, 180, 241);
+    color: white;
+    border-bottom: rgb(187, 146, 231) solid 2px;
+    filter: brightness(150%);
+    text-shadow: 0 0 10px white;
 }
-
+   
 
 /**** Css del footer ****/
 footer {
