@@ -2,8 +2,8 @@
 
 $datos = [$_POST['id'], $_POST['fechaInicio'], $_POST['fechaFin'],$_POST['usuarios_id'], $_POST['alojamientos_id']];
       
-require_once('Database.php');
-Database::update($datos);
+require_once('../Database/Database.php');
+Database::updateReservas($datos);
 header('Location: index.php');
 
 ?>

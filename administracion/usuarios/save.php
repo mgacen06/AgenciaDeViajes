@@ -5,7 +5,7 @@
     require_once('../Database/Database.php');
 
     // 3. Invocar la funcion save de Database llevandole los datos
-    Database::save($datos);
+    Database::saveUsuarios($datos);
 
     // 4. Retornar al index.php
     header('Location: index.php');

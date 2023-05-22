@@ -16,13 +16,16 @@ $reserva= Database::findByIdReservas($id);
 </head>
 <body>
     <main>
+        <video id="videoFondo" src="../img/mar.mp4" autoplay muted loop></video>
         <a href="index.php" class="btn">Atrás</a>
-        <input type="hidden" name="id" value = "<?php echo $reserva['id']?>">
-        <input type="text" name="fechaInicio" placeholder="modificar fecha inicio " value = "<?php echo $reserva['fechaInicio']?>">
-        <input type="text" name="fechaFin" placeholder="modificar fecha fin" value = "<?php echo $reserva['fechaFin']?>">
-        <input type="text" name="usuarios_id" placeholder="modificar us.id" value = "<?php echo $reserva['usuarios_id']?>">
-        <input type="text" name="alojamientos_id" placeholder="modificar aloj.id" value = "<?php echo $reserva['alojamientos_id']?>">
-        <button class="btn" type="submit">Enviar</button>
+        <form action="update.php" method ="POST">
+            <input type="hidden" name="id" value = "<?php echo $reserva['id']?>">
+            <input type="text" name="fechaInicio" placeholder="modificar fecha inicio " value = "<?php echo $reserva['fechaInicio']?>">
+            <input type="text" name="fechaFin" placeholder="modificar fecha fin" value = "<?php echo $reserva['fechaFin']?>">
+            <input type="text" name="usuarios_id" placeholder="modificar us.id" value = "<?php echo $reserva['usuarios_id']?>">
+            <input type="text" name="alojamientos_id" placeholder="modificar aloj.id" value = "<?php echo $reserva['alojamientos_id']?>">
+            <button class="btn" type="submit">Enviar</button>
+        </form>
     </main>
 </body>
 </html>

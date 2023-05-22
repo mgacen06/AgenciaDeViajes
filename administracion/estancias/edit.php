@@ -22,6 +22,7 @@ $alojamiento= Database::findByIdAlojamientos($id);
 </head>
 <body>
     <main>
+    <video id="videoFondo" src="../img/mar.mp4" autoplay muted loop></video>
         <a href="index.php" class="btn">Atrás</a>
         <form action="update.php" method ="POST">
             <input type="hidden" name="id" value = "<?php echo $alojamiento['id']?>">

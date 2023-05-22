@@ -18,8 +18,13 @@
     </ul>
    </nav>
     <main>
-        <h1>Menú de Administración de Viajes Lario</h1>
-        <p class="menu">Crea, modifica y elimina</p>
+        <div class="caja">
+            <h1><strong>Viajes Lario</strong></h1>
+            <h2>Menú de Administración </h2>
+            <p class="menu">Crea, modifica y elimina</p>
+        </div>
+        <video id="videoFondo" src="img/mar.mp4" autoplay muted loop></video>
+       
     </main>
   <!-- ver si aquí pongo una tabla predeterminada -->
 </body>

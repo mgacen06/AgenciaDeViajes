@@ -27,8 +27,11 @@
         </ul>
     </nav>
    <main>
+   <video id="videoFondo" src="../img/mar.mp4" autoplay muted loop></video>
+    <div class="caja">
         <h1><bold>Estancias</bold></h1>
-        <a href="create.php" class="btn">Crear</a>
+        <a href="create.php" class="btn"><strong>Crear</strong></a>
+    </div>
         <table class="tabla">
             <thead class="cabecera">
                 <th>id</th>

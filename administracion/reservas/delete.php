@@ -9,7 +9,7 @@ require_once('../Database/Database.php');
 
 
 //3. invocar metodo delete
-Database::delete($id);
+Database::deleteReservas($id);
 
 //4. retornar a index.php para ver cambios
 header('Location: index.php');
