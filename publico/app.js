@@ -12,4 +12,4 @@ function filtrarPorDestino() {
             document.getElementsByClassName("card")[i].style.display="none";
         }
     }
-}
+}   

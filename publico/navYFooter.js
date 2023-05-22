@@ -21,7 +21,7 @@ ulNav.appendChild(liInicio);
 let liAbout=document.createElement("li");
 let aAbout=document.createElement("a");
 aAbout.setAttribute("class","linav");
-aAbout.setAttribute("href","#aboutus");
+aAbout.setAttribute("href","aboutUs.html");
 aAbout.textContent="Sobre nosotros";
 let iAbout=document.createElement("i");
 iAbout.setAttribute("id","icono");
