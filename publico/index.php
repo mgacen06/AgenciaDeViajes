@@ -31,7 +31,6 @@ $resultado = Database::getAllAlojamientos();
                 <input type="text" placeholder="¿Qué fecha te gustaría alojarte?">
                 <div class="lineah"></div>
                 <input type="text" class="destino" id="destino" name="destino" placeholder="Destino">
-                <div></div>
             </div>
         </div>
         <div class="ofertaViajes">
