@@ -2,7 +2,7 @@
 
 $id = $_GET['id'];
 require_once('../Database/Database.php');
-$usuario= Database::findById($id);
+$usuario= Database::findByIdUsuarios($id);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,22 +14,9 @@ $usuario= Database::findById($id);
     <title>Edit</title>
 </head>
 <body>
-<form action="update.php" method ="POST">
-        <!-- 
-            METHOD:POST
-            ACTION: fichero que gestiona los datos
-        -->
-        <!-- pasas un valor que no se ve -->
-        <!-- 
-dni varchar(10) NOT NULL UNIQUE,
- nombre varchar(25) NOT NULL,
- apellidos varchar(45),
- correo varchar(45) NOT NULL UNIQUE,
- contrasenia varchar(45),
- direccion varchar(45) NOT NULL,
-
-        --> 
-        
+    <main>
+    <a href="index.php" class="btn">Atrás</a> 
+    <form action="update.php" method ="POST">
         <input type="hidden" name="id" value = "<?php echo $usuario['id']?>">
         <input type="text" name="dni" placeholder="modificar dni " value = "<?php echo $usuario['dni']?>">
         <input type="text" name="nombre" placeholder="modificar nombre" value = "<?php echo $usuario['nombre']?>">
@@ -40,4 +27,5 @@ dni varchar(10) NOT NULL UNIQUE,
         <button class="btn" type="submit">Enviar</button> 
     </form>
 </body>
+    </main>
 </html>

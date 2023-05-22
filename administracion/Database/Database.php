@@ -57,12 +57,21 @@ class Database
         $sql= "INSERT INTO alojamientos(nombreViaje, imagen, tipoEstancia, ubicacion, precioPorNoche) VALUES ('$datos[0]', '$datos[1]', '$datos[2]', '$datos[3]' , $datos[4])";
         self::conectar()->exec($sql);
     }
-    public static function findById($id){
+    public static function findByIdAlojamientos($id){
         $sql ="SELECT  * FROM alojamientos WHERE id= $id";
         $alojamiento = self::conectar()->query($sql);
         return $alojamiento->fetch(PDO::FETCH_ASSOC);
     }
+    public static function findByIdReservas($id){
+        $sql ="SELECT * FROM reservas WHERE id= $id";
+        $reserva = self::conectar()->query($sql);
+        return $reserva->fetch(PDO::FETCH_ASSOC);
+    }
+        public static function findByIdUsuarios($id){
+            $sql ="SELECT  * FROM usuarios WHERE id= $id";
+            $usuario = self::conectar()->query($sql);
+            return $usuario->fetch(PDO::FETCH_ASSOC);
 
+    }
 }
-
 ?>

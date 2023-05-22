@@ -10,10 +10,14 @@ body{
     display:flex;
     flex-direction: column;
 }
+main{
+    margin:20px;
+}
 .tabla{
     font-family: 'Courier New', monospace;
     border: 2px solid rgb(0, 0, 0);
     border-collapse: collapse;
+    margin: 20px;
 }
 .cabecera{
     text-align: center;
