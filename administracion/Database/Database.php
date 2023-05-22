@@ -45,15 +45,15 @@ class Database
     }
 
     public static function updateAlojamientos($datos){
-        $sql = "UPDATE FROM alojamientos SET nombreViaje ='$datos[1]', imagen='$datos[2]', tipoEstancia='$datos[3]', ubicacion= '$datos[4]', precioPorNoche=$datos[5] WHERE id='$datos[0]' "; 
+        $sql = "UPDATE alojamientos SET nombreViaje ='$datos[1]', imagen='$datos[2]', tipoEstancia='$datos[3]', ubicacion= '$datos[4]', precioPorNoche=$datos[5] WHERE id='$datos[0]' "; 
         self::conectar()->exec($sql);
     }
     public static function updateReservas($datos){
-        $sql = "UPDATE FROM reservas SET fechaInicio ='$datos[1]', fechaFin='$datos[2]', usuarios_id=$datos[3], alojamientos_id= $datos[4] WHERE id='$datos[0]' "; 
+        $sql = "UPDATE reservas SET fechaInicio ='$datos[1]', fechaFin='$datos[2]', usuarios_id=$datos[3], alojamientos_id= $datos[4] WHERE id='$datos[0]' "; 
         self::conectar()->exec($sql);
      }
     public static function updateUsuarios($datos){
-        $sql = "UPDATE FROM usuarios SET dni ='$datos[1]', nombre='$datos[2]', apellidos='$datos[3]', correo= '$datos[4]', contrasenia='$datos[5]', direccion='$datos[6]'  WHERE id='$datos[0]' "; 
+        $sql = "UPDATE usuarios SET dni ='$datos[1]', nombre='$datos[2]', apellidos='$datos[3]', correo= '$datos[4]', contrasenia='$datos[5]', direccion='$datos[6]'  WHERE id='$datos[0]' "; 
         self::conectar()->exec($sql);
     }
 
