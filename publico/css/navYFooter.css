@@ -20,11 +20,11 @@ nav {
     padding: 10px;
     margin: 5px;
     font-size: 23px;
-    color: white;
+    color:white;
 }
 
 .linav:hover {
-    color: white;
+    color:white;
     border-bottom: rgb(187, 146, 231) solid 2px;
     filter: brightness(150%);
     text-shadow: 0 0 10px white;

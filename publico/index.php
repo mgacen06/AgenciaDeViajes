@@ -1,8 +1,6 @@
 <?php
-
 require_once("../administracion/Database/Database.php");
 $resultado = Database::getAllAlojamientos();
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +11,7 @@ $resultado = Database::getAllAlojamientos();
     <meta name="author" content="Lucía Ortiz y Mario García">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../PFC/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../publico/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/navYFooter.css">
     <link rel="shortcut icon" href="img/icono.ico" type="" id="icono">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css%22%3E">
@@ -37,13 +35,13 @@ $resultado = Database::getAllAlojamientos();
             <?php
             foreach ($resultado as $fila) {
                 echo "<div class='card'>";
-                    echo "<img class='imagen' alt='Avatar' src=" . $fila['imagen'] . "></img>";
-                    echo "<div class='info'>";
-                        echo "<h4 class='titulo'>" . $fila['nombreViaje'] . "</h4>";
-                        echo "<small>" . $fila['tipoEstancia'] . "</small>";
-                        echo "<p class='lugar'>" . $fila['ubicacion'] . "</p>";
-                        echo "<div class='precio'>" . $fila['precioPorNoche'] . " €</div>";
-                    echo "</div>";
+                echo "<img class='imagen' alt='Avatar' src=" . $fila['imagen'] . "></img>";
+                echo "<div class='info'>";
+                echo "<h4 class='titulo'>" . $fila['nombreViaje'] . "</h4>";
+                echo "<small>" . $fila['tipoEstancia'] . "</small>";
+                echo "<p class='lugar'>" . $fila['ubicacion'] . "</p>";
+                echo "<div class='precio'>" . $fila['precioPorNoche'] . " €</div>";
+                echo "</div>";
                 echo "</div>";
             }
             ?>
@@ -69,4 +67,5 @@ $resultado = Database::getAllAlojamientos();
 </body>
 <script src="navYFooter.js"></script>
 <script src="app.js"></script>
+
 </html>
