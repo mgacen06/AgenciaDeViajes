@@ -151,14 +151,26 @@ let datosCards = [
 
 // Buscador
 let destino = document.getElementsByClassName("destino")[0];
+let lugar =document.getElementsByClassName("lugar");
 destino.addEventListener("keyup", filtrarPorDestino);
-
+console.log(lugar[0].textContent.toLowerCase());
 function filtrarPorDestino() {
-    for (i in datosCards) {
-        if (datosCards[i].ubicacion.includes(destino.value)) {
+    console.log(destino.textContent.toLowerCase());
+    for (i in lugar) {
+        if (lugar[i].textContent.includes(destino.value)) {
             document.getElementsByClassName("card")[i].style.display="block";
         } else {
             document.getElementsByClassName("card")[i].style.display="none";
         }
     }
 }
+
+// function filtrarPorDestino() {
+//     for (i in datosCards) {
+//         if (datosCards[i].ubicacion.includes(destino.value)) {
+//             document.getElementsByClassName("card")[i].style.display="block";
+//         } else {
+//             document.getElementsByClassName("card")[i].style.display="none";
+//         }
+//     }
+// }

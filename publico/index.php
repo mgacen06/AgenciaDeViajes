@@ -41,7 +41,7 @@ $resultado = Database::getAllAlojamientos();
                     echo "<div class='info'>";
                         echo "<h4 class='titulo'>" . $fila['nombreViaje'] . "</h4>";
                         echo "<small>" . $fila['tipoEstancia'] . "</small>";
-                        echo "<p id='lugar'>" . $fila['ubicacion'] . "</p>";
+                        echo "<p class='lugar'>" . $fila['ubicacion'] . "</p>";
                         echo "<div class='precio'>" . $fila['precioPorNoche'] . " €</div>";
                     echo "</div>";
                 echo "</div>";
