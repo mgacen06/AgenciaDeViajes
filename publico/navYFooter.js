@@ -47,7 +47,7 @@ ulNav.appendChild(liContacto);
 let liLogin=document.createElement("li");
 let aLogin=document.createElement("a");
 aLogin.setAttribute("class","linav");
-aLogin.setAttribute("href","login.html");
+aLogin.setAttribute("href","login.php");
 aLogin.textContent="Login";
 let iLogin=document.createElement("i");
 iLogin.setAttribute("id","icono");

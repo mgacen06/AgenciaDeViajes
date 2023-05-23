@@ -20,7 +20,7 @@
         <div>
             <h3>Inicio de sesión</h3>
         </div>
-        <form method="" action="" class="caja" id="login">
+        <form method="POST" action="user_exist.php" class="caja" id="login">
             <br><br>
             <label>Correo<br>
                 <input type="email" placeholder="xxxxx@gmail.com" onblur="validarCorreo()" name="correo" id="correo">
@@ -28,8 +28,7 @@
             </label>
             <br><br>
             <label>Contraseña<br>
-                <input placeholder="********" onblur="validarContrasenia()" name="contrasenia" type="password"
-                    id="contrasenia">
+                <input placeholder="********" onblur="validarContrasenia()" name="contrasenia" type="password" id="contrasenia">
                 <br>
                 <span id="spanContrasenia"></span>
             </label>
@@ -38,7 +37,7 @@
             <br><br>
             <div>¿Todavía no te has registrado? Haz click aquí:</div>
             <br><br>
-            <a href="registro.html" class="button1"> Registrarse</a>
+            <a href="registro.php" class="button1"> Registrarse</a>
             <br><br>
         </form>
     </main>
@@ -46,4 +45,5 @@
 </body>
 <script src="app_login.js"></script>
 <script src="navYFooter.js"></script>
+
 </html>
