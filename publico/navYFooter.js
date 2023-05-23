@@ -53,11 +53,25 @@ let iLogin=document.createElement("i");
 iLogin.setAttribute("id","icono");
 iLogin.setAttribute("class","fa-solid fa-arrow-right-to-bracket");
 
+
 aLogin.appendChild(iLogin);
 liLogin.appendChild(aLogin);
 ulNav.appendChild(liLogin);
-
 elNav.appendChild(ulNav);
+
+
+let liReserva=document.createElement("li");
+let aReserva=document.createElement("a");
+aReserva.setAttribute("class","linav");
+aReserva.setAttribute("href","reserva.php");
+aReserva.textContent="Reserva";
+let iReserva=document.createElement("i");
+iReserva.setAttribute("id","icono");
+iReserva.setAttribute("class","fa-solid fa-cart-shopping");
+
+aReserva.appendChild(iReserva);
+liReserva.appendChild(aReserva);
+ulNav.appendChild(liReserva);
 
 
 // FOOTER
