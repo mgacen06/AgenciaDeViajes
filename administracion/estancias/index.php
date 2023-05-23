@@ -20,7 +20,7 @@
     <nav>
         <ul>
             <!-- clase para los iconos -->
-            <li><a class="menuA" href="../menuAdmin.php">Administración</a></li>
+            <li><a class="menuA" href="../index.php">Administración</a></li>
             <li><a class="menuA" href="index.php">Estancias</a></li>
             <li><a class="menuA" href="../reservas/index.php">Reservas</a></li> 
             <li><a class="menuA" href="../usuarios/index.php">Usuarios</a></li> 

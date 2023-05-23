@@ -19,7 +19,7 @@
 <body>
     <nav>
         <ul>
-            <li><a class="menuA" href="../menuAdmin.php">Administración</a></li>
+            <li><a class="menuA" href="../index.php">Administración</a></li>
             <li><a class="menuA"  href="../estancias/index.php">Estancias</a></li>
             <li><a class="menuA" href="index.php">Reservas</a></li> 
             <li><a class="menuA" href="../usuarios/index.php">Usuarios</a></li> 
