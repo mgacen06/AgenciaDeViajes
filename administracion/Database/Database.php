@@ -79,7 +79,7 @@ class Database
         self::conectar()->exec($sql);
     }
     public static function saveUsuarios($datos){
-        $sql= "INSERT INTO usuarios(dni, nombre, apellidos, correo, contrasenia, direccion) VALUES ('$datos[1]', '$datos[2]', '$datos[3]', '$datos[4]' , '$datos[5]', '$datos[6]')";
+        $sql= "INSERT INTO usuarios(dni, nombre, apellidos, correo, contrasenia, direccion) VALUES ('$datos[0]', '$datos[1]', '$datos[2]', '$datos[3]' , '$datos[4]', '$datos[5]')";
         self::conectar()->exec($sql);
     }
 
