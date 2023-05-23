@@ -48,21 +48,14 @@ $resultado = Database::getAllAlojamientos();
         </div>
     </main>
     <footer>
-        <div class="redesSociales">
-            <a class="redes" href="https://www.instagram.com/mgacen06/"><i id="botontw" class="fab fa-instagram"></i>Instagram</a>
-            <a class="redes" href="https://twitter.com"><i id="botontw" class="fab fa-twitter"></i>Twitter</a>
-        </div>
-        <div class="infoFooter">
-            <div id="aboutus">
-                <!-- Sobre nosotros -->
-                <h4>Nuestra historia:</h4>
-                <p>Es una empresa que nació en 2004, por Lucía Ortiz y Mario García, llegando a posicionarse como una de las empresas de viajes con más usuarios registrados, en la que más de 50.000 personas al año confían para planificar sus vacaciones.</p>
-                <p>Visita nuestras redes sociales para conocer más.</p>
-            </div>
-            <div></div>
-            <br>
-            <small>Copyright © 2022 Empresa de venta de alojamientos. Todos los derechos reservados. C/ Bernardino Obregón 25, 28012. Madrid, España</small>
-        </div>
+    <div class="redesSociales">
+        <a class="redes" href="https://www.instagram.com/mgacen06/"><i id="botontw" class="fab fa-instagram"></i>Instagram</a>
+        <a class="redes" href="https://twitter.com"><i id="botontw" class="fab fa-twitter"></i>Twitter</a>
+    </div>
+    <div class="infoFooter">
+        <br>
+        <small>Copyright © 2022 Empresa de ofertas de alojamientos. Todos los derechos reservados. C/ Bernardino Obregón 25, 28012. Madrid, España</small>
+    </div>
     </footer>
 </body>
 <script src="navYFooter.js"></script>

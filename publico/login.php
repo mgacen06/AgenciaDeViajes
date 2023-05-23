@@ -41,7 +41,16 @@
             <br><br>
         </form>
     </main>
-    <footer id="elFooter"></footer>
+    <footer>
+        <div class="redesSociales">
+            <a class="redes" href="https://www.instagram.com/mgacen06/"><i id="botontw" class="fab fa-instagram"></i>Instagram</a>
+            <a class="redes" href="https://twitter.com"><i id="botontw" class="fab fa-twitter"></i>Twitter</a>
+        </div>
+        <div class="infoFooter">
+            <br>
+            <small>Copyright © 2022 Empresa de ofertas de alojamientos. Todos los derechos reservados. C/ Bernardino Obregón 25, 28012. Madrid, España</small>
+        </div>
+    </footer>
 </body>
 <script src="app_login.js"></script>
 <script src="navYFooter.js"></script>
