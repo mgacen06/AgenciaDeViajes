@@ -3,7 +3,7 @@ $bien=false;
 $bien = $_GET['bien'];
 
 if($bien){
-    header('Location: index.php?bien="true"');
+    header('Location: index.php?bien="1"');
 }
 
 ?>
@@ -31,12 +31,12 @@ if($bien){
         <form method="POST" action="user_exist.php" class="caja" id="login">
             <br><br>
             <label>Correo<br>
-                <input type="email" placeholder="xxxxx@gmail.com" onblur="validarCorreo()" name="correo" id="correo">
+                <input type="email" placeholder="xxxxx@gmail.com" onblur="validarCorreo()" name="correo" id="correo" required>
                 <span id="spanCorreo"></span>
             </label>
             <br><br>
             <label>Contraseña<br>
-                <input placeholder="********" onblur="validarContrasenia()" name="contrasenia" type="password" id="contrasenia">
+                <input placeholder="********" onblur="validarContrasenia()" name="contrasenia" type="password" id="contrasenia" required>
                 <br>
                 <span id="spanContrasenia"></span>
             </label>
