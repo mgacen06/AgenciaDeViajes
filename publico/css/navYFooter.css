@@ -5,15 +5,20 @@ nav {
     width: 100%;
     margin: 0px;
     background-color: black;
+    justify-content: space-around;
+    height: 80px;
 }
 
 .ulnav {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin: 4px 10px 4px 10px;
+    margin: 10px 10px 10px 10px;
     padding-left: 0px;
+    justify-content: space-between;
 }
+
 
 .linav {
     display: flex;
@@ -21,13 +26,17 @@ nav {
     margin: 5px;
     font-size: 23px;
     color:white;
+    margin-right: 20px;
 }
 
-.linav:hover {
-    color:white;
-    border-bottom: rgb(187, 146, 231) solid 2px;
+
+#icono:hover {
+    /* color:white; */
     filter: brightness(150%);
-    text-shadow: 0 0 10px white;
+
+}
+.linav:hover{
+    border-bottom: rgb(187, 146, 231) solid 2px;
 }
    
 

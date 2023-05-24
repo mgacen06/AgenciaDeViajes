@@ -9,12 +9,7 @@ let aInicio=document.createElement("a");
 aInicio.setAttribute("class","linav");
 aInicio.setAttribute("href","index.php");
 aInicio.textContent="Inicio";
-let iInicio=document.createElement("i");
-iInicio.setAttribute("id","icono");
-iInicio.setAttribute("class","fa fa-plane");
 
-
-aInicio.appendChild(iInicio);
 liInicio.appendChild(aInicio);
 ulNav.appendChild(liInicio);
 
@@ -23,11 +18,7 @@ let aAbout=document.createElement("a");
 aAbout.setAttribute("class","linav");
 aAbout.setAttribute("href","aboutUs.php");
 aAbout.textContent="Sobre nosotros";
-let iAbout=document.createElement("i");
-iAbout.setAttribute("id","icono");
-iAbout.setAttribute("class","fas fa-users");
 
-aAbout.appendChild(iAbout);
 liAbout.appendChild(aAbout);
 ulNav.appendChild(liAbout);
 
@@ -36,22 +27,31 @@ let aContacto=document.createElement("a");
 aContacto.setAttribute("class","linav");
 aContacto.setAttribute("href","contacto.php");
 aContacto.textContent="Contacto";
-let iContacto=document.createElement("i");
-iContacto.setAttribute("id","icono");
-iContacto.setAttribute("class","fa fa-handshake");
 
-aContacto.appendChild(iContacto);
 liContacto.appendChild(aContacto);
 ulNav.appendChild(liContacto);
+
+let liReserva=document.createElement("li");
+let aReserva=document.createElement("a");
+aReserva.setAttribute("class","linav");
+aReserva.setAttribute("href","reserva.php");
+aReserva.textContent="Reservar";
+
+liReserva.appendChild(aReserva);
+ulNav.appendChild(liReserva);
+
+
 
 let liLogin=document.createElement("li");
 let aLogin=document.createElement("a");
 aLogin.setAttribute("class","linav");
 aLogin.setAttribute("href","login.php");
-aLogin.textContent="Login";
+aLogin.textContent="";
 let iLogin=document.createElement("i");
 iLogin.setAttribute("id","icono");
-iLogin.setAttribute("class","fa-solid fa-arrow-right-to-bracket");
+iLogin.setAttribute("class","fas fa-sign-in-alt");
+iLogin.style.color = "#0e953d";
+
 
 
 aLogin.appendChild(iLogin);
@@ -59,19 +59,6 @@ liLogin.appendChild(aLogin);
 ulNav.appendChild(liLogin);
 elNav.appendChild(ulNav);
 
-
-let liReserva=document.createElement("li");
-let aReserva=document.createElement("a");
-aReserva.setAttribute("class","linav");
-aReserva.setAttribute("href","reserva.php");
-aReserva.textContent="Reserva";
-let iReserva=document.createElement("i");
-iReserva.setAttribute("id","icono");
-iReserva.setAttribute("class","fa-solid fa-cart-shopping");
-
-aReserva.appendChild(iReserva);
-liReserva.appendChild(aReserva);
-ulNav.appendChild(liReserva);
 
 
 // FOOTER

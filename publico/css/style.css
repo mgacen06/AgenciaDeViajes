@@ -461,7 +461,8 @@ div [class="lineah"] {
 
 @media (max-width:1283px) {
     #icono {
-        display: none;
+        display:block;
+        width: 20px;
     }
 
     #titulo {
