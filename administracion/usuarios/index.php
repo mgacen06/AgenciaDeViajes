@@ -32,6 +32,7 @@ $resultado = Database::getAllUsuarios();
         <table class="tabla">
             <thead class="cabecera">
                 <th>id</th>
+                <th>rol</th>
                 <th>dni</th>
                 <th>Nombre</th>
                 <th>Apellidos</th>
@@ -47,7 +48,7 @@ $resultado = Database::getAllUsuarios();
                 foreach ($resultado as $fila) {
                     // opcional con las comillas dobles las diferencio con barra invertida si las quiero usar dentro de un string
                     echo "<tr>";
-                    for ($i = 0; $i < 7; $i++) {
+                    for ($i = 0; $i < 8; $i++) {
                         echo "<td>" . $fila[$i] . "</td>";
                     }
                     echo "<td class=btns> <a class='btn' href='edit.php?id=".$fila['id']."'>Editar</a> <a class='btn' href='delete.php?id=".$fila['id']."'>Eliminar</a></td>";

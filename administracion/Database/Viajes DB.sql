@@ -4,6 +4,7 @@ USE agencia;
 
 CREATE TABLE IF NOT EXISTS usuarios (
  id int NOT NULL AUTO_INCREMENT,
+ rol int NOT NULL,
  dni varchar(10) NOT NULL UNIQUE,
  nombre varchar(25) NOT NULL,
  apellidos varchar(45),
@@ -14,35 +15,35 @@ CREATE TABLE IF NOT EXISTS usuarios (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*(NULL, dni, nombre apellidos correo fechaNacimiento)*/
 /*ME DA ERROR DATA TRUNCATED EN FECHANACIMIENTO Y NO SE POR QUE, PREGUNTAR A SERGIO*/
-INSERT INTO usuarios VALUES (null, '06600900-S',
-'Mario', 'Garcia', 'marihongo2000@gmail.com','geUkbtcBG8!kw@Hs', 'Calle Passeig Quiñónez, 19'
+INSERT INTO usuarios VALUES (null, 1,'06600900-S',
+'Mario', 'Garcia', 'marihongo2000@gmail.com','cC11.QWERTO', 'Calle Passeig Quiñónez, 19'
 );
-INSERT INTO usuarios VALUES (null, '12345678-S',
-'admin', 'istrador', 'admin@gmail.com','KFtog6R4E^VNU48a' ,'Calle Plaça Aguilar, 632, Entre suelo 4º'
+INSERT INTO usuarios VALUES (null,1 ,'12345678-S',
+'admin', 'istrador', 'admin@gmail.com','cC11.QWERTO' ,'Calle Plaça Aguilar, 632, Entre suelo 4º'
 );
-INSERT INTO usuarios VALUES (null, '23456789-S',
-'Lucia', 'Ortiz', 'luciaortiz@gmail.com','Wq8SQ855LRq%Kk7j', 'Calle Ruela Tamez, 408, Bajos'
+INSERT INTO usuarios VALUES (null,1 ,'23456789-S',
+'Lucia', 'Ortiz', 'luciaortiz@gmail.com','cC11.QWERTO', 'Calle Ruela Tamez, 408, Bajos'
 );
-INSERT INTO usuarios VALUES (null, '34567890-S',
-'Juan', 'Marcos', 'juanmarcos@gmail.com', '3QRLo9iVPc4HQUF$','Calle Teresa 11 Bajo 3º'
+INSERT INTO usuarios VALUES (null,2 ,'34567890-S',
+'Juan', 'Marcos', 'juanmarcos@gmail.com', 'cC11.QWERTY','Calle Teresa 11 Bajo 3º'
 );
-INSERT INTO usuarios VALUES (null, '45678901-S',
-'Pedro', 'Sanchez', 'presidente@gmail.com', 'LEXAS$W3yw3p4s$j','Calle Praza Mara 5 2º E'
+INSERT INTO usuarios VALUES (null,2 ,'45678901-S',
+'Pedro', 'Sanchez', 'presidente@gmail.com', 'cC11.QWERTY','Calle Praza Mara 5 2º E'
 );
-INSERT INTO usuarios VALUES (null, '56789012-S',
-'Mariano', 'Rajoy', 'marianorajoy@gmail.com','M56Jp3hgQP%9tco3','Calle Travesía Galván 6 3º F'
+INSERT INTO usuarios VALUES (null,2 ,'56789012-S',
+'Mariano', 'Rajoy', 'marianorajoy@gmail.com','cC11.QWERTY','Calle Travesía Galván 6 3º F'
 );
-INSERT INTO usuarios VALUES (null, '67890123-S',
-'Francisco', 'Noese', 'fran@gmail.com', '8jCp3RE%EGDrTFdi','Calle Ruela Gael 81 2º D'
+INSERT INTO usuarios VALUES (null,2 ,'67890123-S',
+'Francisco', 'Noese', 'fran@gmail.com', 'cC11.QWERTY','Calle Ruela Gael 81 2º D'
 );
-INSERT INTO usuarios VALUES (null, '78901234-S',
-'Isabel', 'Diaz', 'presidenta@gmail.com','%ftKHK3sLaUQoFuZ', 'Calle Ronda Villa 7 5º F'
+INSERT INTO usuarios VALUES (null,2 ,'78901234-S',
+'Isabel', 'Diaz', 'presidenta@gmail.com','cC11.QWERTY', 'Calle Ronda Villa 7 5º F'
 );
-INSERT INTO usuarios VALUES (null, '89012345-S',
-'Iker', 'Casillas', 'portero@gmail.com','9$RxtBKxe74sJvQn' ,'Calle Camino Duran 9 5º'
+INSERT INTO usuarios VALUES (null,2 ,'89012345-S',
+'Iker', 'Casillas', 'portero@gmail.com','cC11.QWERTY' ,'Calle Camino Duran 9 5º'
 );
-INSERT INTO usuarios VALUES (null, '90123456-S',
-'Angeles', 'Lakers', 'tripleee@gmail.com','U$um2gxS8sBnYgQy' ,'Calle Travessera Cedillo, 9'
+INSERT INTO usuarios VALUES (null, 2, '90123456-S',
+'Angeles', 'Lakers', 'tripleee@gmail.com','cC11.QWERTY' ,'Calle Travessera Cedillo, 9'
 );
 
 CREATE TABLE IF NOT EXISTS alojamientos (

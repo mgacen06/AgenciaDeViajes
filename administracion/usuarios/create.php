@@ -12,6 +12,7 @@
         <a href="index.php " class="btn">Atrás</a>
         <video id="videoFondo" src="../img/mar.mp4" autoplay muted loop></video>
         <form action="save.php" method ="POST">
+            <input type="text" name="rol" placeholder="modificar rol ">
             <input type="text" name="dni" placeholder="modificar dni ">
             <input type="text" name="nombre" placeholder="modificar nombre" >
             <input type="text" name="apellidos" placeholder="modificar apellidos" >
