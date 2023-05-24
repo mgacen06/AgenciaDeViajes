@@ -53,7 +53,7 @@ class Database
         self::conectar()->exec($sql);
      }
     public static function updateUsuarios($datos){
-        $sql = "UPDATE usuarios SET dni ='$datos[1]', nombre='$datos[2]', apellidos='$datos[3]', correo= '$datos[4]', contrasenia='$datos[5]', direccion='$datos[6]'  WHERE id='$datos[0]' "; 
+        $sql = "UPDATE usuarios SET rol='$datos[1]', dni='$datos[2]', nombre='$datos[3]', apellidos= '$datos[4]', correo='$datos[5]', contrasenia='$datos[6]' direccion=$datos[7] WHERE id='$datos[0]' "; 
         self::conectar()->exec($sql);
     }
 
@@ -71,7 +71,7 @@ class Database
     }
 
     public static function saveAlojamientos($datos){
-        $sql= "INSERT INTO alojamientos(nombreViaje, imagen, tipoEstancia, ubicacion, precioPorNoche) VALUES ('$datos[1]', '$datos[2]', '$datos[3]', '$datos[4]' , $datos[5])";
+        $sql= "INSERT INTO alojamientos(nombreViaje, imagen, tipoEstancia, ubicacion, precioPorNoche) VALUES ($datos[1], '$datos[2]', '$datos[3]', '$datos[4]' , '$datos[5]')";
         self::conectar()->exec($sql);
     }
     public static function saveReservas($datos){
@@ -79,7 +79,7 @@ class Database
         self::conectar()->exec($sql);
     }
     public static function saveUsuarios($datos){
-        $sql= "INSERT INTO usuarios(dni, nombre, apellidos, correo, contrasenia, direccion) VALUES ('$datos[0]', '$datos[1]', '$datos[2]', '$datos[3]' , '$datos[4]', '$datos[5]')";
+        $sql= "INSERT INTO usuarios(rol, dni, nombre, apellidos, correo, contrasenia, direccion) VALUES ($datos[1], '$datos[2]', '$datos[3]', '$datos[4]' , '$datos[5]', '$datos[6]', '$datos[7]')";
         self::conectar()->exec($sql);
     }
 
