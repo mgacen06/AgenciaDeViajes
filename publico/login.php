@@ -1,3 +1,12 @@
+<?php
+$bien=false;
+$bien = $_GET['bien'];
+
+if($bien){
+    header('Location: index.php?bien="true"');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +21,6 @@
     <link rel="shortcut icon" href="imagenes/icono.ico" type="" id="icono">
     <title>Login</title>
 </head>
-
 <body>
     <nav id="elNav"></nav>
     <main class="hijo2form">
@@ -41,16 +49,7 @@
             <br><br>
         </form>
     </main>
-    <footer>
-        <div class="redesSociales">
-            <a class="redes" href="https://www.instagram.com/mgacen06/"><i id="botontw" class="fab fa-instagram"></i>Instagram</a>
-            <a class="redes" href="https://twitter.com"><i id="botontw" class="fab fa-twitter"></i>Twitter</a>
-        </div>
-        <div class="infoFooter">
-            <br>
-            <small>Copyright © 2022 Empresa de ofertas de alojamientos. Todos los derechos reservados. C/ Bernardino Obregón 25, 28012. Madrid, España</small>
-        </div>
-    </footer>
+    <footer id="elFooter"></footer>
 </body>
 <script src="app_login.js"></script>
 <script src="navYFooter.js"></script>

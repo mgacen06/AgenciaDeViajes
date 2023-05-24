@@ -1,6 +1,7 @@
 <?php
     // 1. Recoger todos los elementos del formulario
-    $datos = [$_POST['dni'], $_POST['nombre'], $_POST['apellidos'], $_POST['correo'], password_hash($_POST['contrasenia'], PASSWORD_DEFAULT), $_POST['direccion']];
+    // $datos = [$_POST['dni'], $_POST['nombre'], $_POST['apellidos'], $_POST['correo'], password_hash($_POST['contrasenia'], PASSWORD_DEFAULT), $_POST['direccion']];
+    $datos = [$_POST['dni'], $_POST['nombre'], $_POST['apellidos'], $_POST['correo'], $_POST['contrasenia'], $_POST['direccion']];
     
     // 2. Importar la clase Database.php
     require_once('../Database/Database.php');
