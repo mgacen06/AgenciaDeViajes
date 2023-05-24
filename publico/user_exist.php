@@ -9,14 +9,14 @@ $resultado = Database::login($info[0], $info[1]);
 if($resultado == null){
     header('Location: login.php');
 } else{
-    if($resultado['rol_id'] == 1){
+    if($resultado['rol'] == 1){
         session_start();
         $_SESSION['user'] = $resultado;
-        header('Location: ../administracion/Database/Database.php');
-    }else if($resultado['rol_id'] == 2){
+        header('Location:../administracion/index.php');
+    }else if($resultado['rol'] == 2){
         session_start();
         $_SESSION['user'] = $resultado;
-        header('Location: /index.php');
+        header('Location: index.php?nombre=' . $resultado['nombre']);
     }else{
         header('Location: login.php');
     }

@@ -22,18 +22,19 @@ details:hover .summary{
 }
 .summary:hover #anav{
     display: block;
-    font-size: 10px;
+    font-size: 15px;
 }
 
-#anav{
+.anav{
     font-size: 15px;
     color:white;
     gap:4px;
 }
-#anav:first-child{
+.anav:first-child{
     color: green;
 }
-#anav:last-child{
+
+.anav:last-child{
     color:red;
 }
 
@@ -47,8 +48,6 @@ details:hover .summary{
     justify-content: space-between;
 }
 
-
-
 .linav {
     display: flex;
     padding: 10px;
@@ -58,7 +57,6 @@ details:hover .summary{
     margin-right: 20px;
 }
 
-
 #icono:hover {
     /* color:white; */
     filter: brightness(150%);
@@ -66,8 +64,7 @@ details:hover .summary{
 }
 .linav:hover{
     border-bottom: rgb(187, 146, 231) solid 2px;
-}
-   
+}  
 
 /**** Css del footer ****/
 footer {

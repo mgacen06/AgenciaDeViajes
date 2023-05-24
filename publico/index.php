@@ -1,8 +1,6 @@
 <?php
 require_once("../administracion/Database/Database.php");
 $resultado = Database::getAllAlojamientos();
-$bien=0;
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,13 +21,6 @@ $bien=0;
 <body>
     <nav id="elNav"></nav>
     <main>
-        <?php
-        if($bien=1){
-            echo "Te has registrado";
-        } else{
-            echo "No te has registrado";
-        }
-        ?>
         <a id="titulo" href="index.php">Viajes Lario</a>
         <div class="buscador">
             <button type="button" class="button1">Buscar</button>

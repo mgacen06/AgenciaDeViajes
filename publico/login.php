@@ -1,12 +1,3 @@
-<?php
-$bien=false;
-$bien = $_GET['bien'];
-
-if($bien){
-    header('Location: index.php?bien="1"');
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 

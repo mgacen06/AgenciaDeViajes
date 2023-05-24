@@ -65,7 +65,7 @@ let ap1Login = document.createElement("a");
 let ap2Login = document.createElement("a");
 
 summaryLogin.style.backgroundColor="black";
-summaryLogin.textContent ="";
+// summaryLogin.textContent ="";
 summaryLogin.setAttribute("class","summary");
 detailsLogin.style.color= "white";
 ap1Login.textContent= "Login ";
@@ -74,8 +74,8 @@ ap1Login.setAttribute("class","alogin");
 ap2Login.setAttribute("class","alogin");
 
 
-ap1Login.setAttribute("id","anav");
-ap2Login.setAttribute("id","anav");
+ap1Login.setAttribute("class","anav");
+ap2Login.setAttribute("class","anav");
 ap1Login.setAttribute("href", "login.php");
 ap2Login.setAttribute("href", "logout.php" );
 

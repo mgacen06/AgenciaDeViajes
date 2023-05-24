@@ -58,12 +58,12 @@ CREATE TABLE IF NOT EXISTS alojamientos (
 /*NULL, nombre, imagenPpal, tipoEstancia, ubicacion, precioPorNoche 
 cargar el csv
 */
-/*LOAD DATA INFILE 'C:\\xampp\\xammp\\htdocs\\PFC\\administracion\\estancias\\DatosHoteles.csv'
+LOAD DATA INFILE 'C:\\XAMPP 2\\htdocs\\PROYECTOS PHP\\PFC\\administracion\\estancias\\DatosHoteles.csv'
   INTO TABLE alojamientos
   FIELDS TERMINATED BY ','
   LINES TERMINATED BY '\n'
   IGNORE 1 ROWS;
- */ 
+ 
 CREATE TABLE IF NOT EXISTS reservas (
  id int NOT NULL AUTO_INCREMENT,
  fechaInicio DATE NOT NULL,
