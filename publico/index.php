@@ -1,6 +1,8 @@
 <?php
 require_once("../administracion/Database/Database.php");
 $resultado = Database::getAllAlojamientos();
+$bien=0;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +23,13 @@ $resultado = Database::getAllAlojamientos();
 <body>
     <nav id="elNav"></nav>
     <main>
+        <?php
+        if($bien=1){
+            echo "Te has registrado";
+        } else{
+            echo "No te has registrado";
+        }
+        ?>
         <a id="titulo" href="index.php">Viajes Lario</a>
         <div class="buscador">
             <button type="button" class="button1">Buscar</button>
@@ -47,16 +56,7 @@ $resultado = Database::getAllAlojamientos();
             ?>
         </div>
     </main>
-    <footer>
-    <div class="redesSociales">
-        <a class="redes" href="https://www.instagram.com/mgacen06/"><i id="botontw" class="fab fa-instagram"></i>Instagram</a>
-        <a class="redes" href="https://twitter.com"><i id="botontw" class="fab fa-twitter"></i>Twitter</a>
-    </div>
-    <div class="infoFooter">
-        <br>
-        <small>Copyright © 2022 Empresa de ofertas de alojamientos. Todos los derechos reservados. C/ Bernardino Obregón 25, 28012. Madrid, España</small>
-    </div>
-    </footer>
+    <footer id="elFooter"></footer>
 </body>
 <script src="navYFooter.js"></script>
 <script src="app.js"></script>
