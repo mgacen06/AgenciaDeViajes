@@ -32,7 +32,7 @@ $resultado = Database::getAllUsuarios();
         <table class="tabla">
             <thead class="cabecera">
                 <th>id</th>
-                <th>Rol</th>
+                <th>rol</th>
                 <th>dni</th>
                 <th>Nombre</th>
                 <th>Apellidos</th>
