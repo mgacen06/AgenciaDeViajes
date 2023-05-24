@@ -19,6 +19,7 @@ $usuario= Database::findByIdUsuarios($id);
     <a href="index.php" class="btn">Atrás</a> 
     <form action="update.php" method ="POST">
         <input type="hidden" name="id" value = "<?php echo $usuario['id']?>">
+        <input type="text" name="rol" placeholder="modificar rol " value = "<?php echo $usuario['rol']?>">
         <input type="text" name="dni" placeholder="modificar dni " value = "<?php echo $usuario['dni']?>">
         <input type="text" name="nombre" placeholder="modificar nombre" value = "<?php echo $usuario['nombre']?>">
         <input type="text" name="apellidos" placeholder="modificar apellidos" value = "<?php echo $usuario['apellidos']?>">
