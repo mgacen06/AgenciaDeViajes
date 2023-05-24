@@ -8,6 +8,34 @@ nav {
     justify-content: space-around;
     height: 80px;
 }
+.summary{
+    padding: 10px;
+    display:none;
+}
+.liLogin:hover .summary{
+    display: block;
+    color:rgb(255, 255, 255);
+}
+details:hover .summary{
+    display: block;
+    color:rgb(255, 255, 255);
+}
+.summary:hover #anav{
+    display: block;
+    font-size: 10px;
+}
+
+#anav{
+    font-size: 15px;
+    color:white;
+    gap:4px;
+}
+#anav:first-child{
+    color: green;
+}
+#anav:last-child{
+    color:red;
+}
 
 .ulnav {
     width: 100%;
@@ -18,6 +46,7 @@ nav {
     padding-left: 0px;
     justify-content: space-between;
 }
+
 
 
 .linav {

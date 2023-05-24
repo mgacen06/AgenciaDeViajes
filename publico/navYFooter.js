@@ -52,12 +52,37 @@ iLogin.setAttribute("id","icono");
 iLogin.setAttribute("class","fas fa-sign-in-alt");
 iLogin.style.color = "#0e953d";
 
-
+liLogin.setAttribute("class","liLogin");
 
 aLogin.appendChild(iLogin);
 liLogin.appendChild(aLogin);
 ulNav.appendChild(liLogin);
 elNav.appendChild(ulNav);
+
+let detailsLogin= document.createElement("details");
+let summaryLogin= document.createElement("summary");
+let ap1Login = document.createElement("a");
+let ap2Login = document.createElement("a");
+
+summaryLogin.style.backgroundColor="black";
+summaryLogin.textContent ="";
+summaryLogin.setAttribute("class","summary");
+detailsLogin.style.color= "white";
+ap1Login.textContent= "Login ";
+ap2Login.textContent="Logout";
+ap1Login.setAttribute("class","alogin");
+ap2Login.setAttribute("class","alogin");
+
+
+ap1Login.setAttribute("id","anav");
+ap2Login.setAttribute("id","anav");
+ap1Login.setAttribute("href", "login.php");
+ap2Login.setAttribute("href", "logout.php" );
+
+summaryLogin.appendChild(ap1Login);
+summaryLogin.appendChild(ap2Login);
+detailsLogin.appendChild(summaryLogin);
+liLogin.appendChild(detailsLogin);
 
 
 
