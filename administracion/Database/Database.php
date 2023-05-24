@@ -97,7 +97,24 @@ class Database
         $sql ="SELECT  * FROM usuarios WHERE id= $id";
         $usuario = self::conectar()->query($sql);
         return $usuario->fetch(PDO::FETCH_ASSOC);
+    }
 
+    public static function login($email, $password){
+        // 1. Conectar a la BD
+
+        // 2. Realizar consulta con el email y password recibido
+        $sql = "SELECT * FROM usuarios WHERE correo = '$email' AND contrasenia = '$password'";
+        
+        // 3. Si es correcto, devuelvo los datos del usuario
+        $user = self::conectar()->query($sql);
+
+        if($user != null){
+            return $user->fetch(PDO::FETCH_ASSOC);
+        }
+        else{
+            // 4. Si no es correcto, devuelvo null
+            return null;
+        }
     }
 }
 ?>
