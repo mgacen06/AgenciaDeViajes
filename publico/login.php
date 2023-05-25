@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/navYFooter.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../PFC/fontawesome/css/all.css">
-    <link rel="shortcut icon" href="imagenes/icono.ico" type="" id="icono">
+    <link rel="shortcut icon" href="/publico/img/icono.ico" type="" id="icono">
     <title>Login</title>
 </head>
 <body>
