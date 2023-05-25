@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS agencia;
 CREATE DATABASE IF NOT EXISTS agencia;
 USE agencia;
 
-CREATE TABLE IF NOT EXISTS usuarios (
+CREATE TABLE IF NOT EXISTS 7_usuarios (
  id int NOT NULL AUTO_INCREMENT,
  rol int NOT NULL,
  dni varchar(10) NOT NULL UNIQUE,
@@ -46,7 +46,7 @@ INSERT INTO usuarios VALUES (null, 2, '90123456-S',
 'Angeles', 'Lakers', 'tripleee@gmail.com','cC11.QWERTY' ,'Calle Travessera Cedillo, 9'
 );
 
-CREATE TABLE IF NOT EXISTS alojamientos (
+CREATE TABLE IF NOT EXISTS 7_alojamientos (
  id int NOT NULL AUTO_INCREMENT,
  nombreViaje varchar(45) NOT NULL,
  imagen varchar(45) NOT NULL,
@@ -58,13 +58,13 @@ CREATE TABLE IF NOT EXISTS alojamientos (
 /*NULL, nombre, imagenPpal, tipoEstancia, ubicacion, precioPorNoche 
 cargar el csv
 */
-LOAD DATA INFILE 'C:\\XAMPP 2\\htdocs\\PROYECTOS PHP\\PFC\\administracion\\estancias\\DatosHoteles.csv'
+LOAD DATA INFILE 'C:\\xampp\\xammp\\htdocs\\PFC\\administracion\\estancias\\DatosHoteles.csv'
   INTO TABLE alojamientos
   FIELDS TERMINATED BY ','
   LINES TERMINATED BY '\n'
   IGNORE 1 ROWS;
  
-CREATE TABLE IF NOT EXISTS reservas (
+CREATE TABLE IF NOT EXISTS 7_reservas (
  id int NOT NULL AUTO_INCREMENT,
  fechaInicio DATE NOT NULL,
  fechaFin DATE NOT NULL,
