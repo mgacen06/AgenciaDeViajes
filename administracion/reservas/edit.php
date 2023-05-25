@@ -1,9 +1,7 @@
 <?php
-
 $id = $_GET['id'];
 require_once('../Database/Database.php');
-$reserva= Database::findByIdReservas($id);
-        
+$reserva= Database::findByIdReservas($id);       
 ?>
 <!DOCTYPE html>
 <html lang="en">

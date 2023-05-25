@@ -43,7 +43,6 @@
       </tr>
     </table>
     <br>
-    <!-- dar estilo a los botones -->
 <div id="botonesAdmin">
     <button id="adminboton">Añadir</button>
     <button id="adminboton">Editar</button>

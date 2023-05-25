@@ -1,15 +1,7 @@
 <?php
-
 $id = $_GET['id'];
 require_once('../Database/Database.php');
 $alojamiento= Database::findByIdAlojamientos($id);
-        /*
-        nombreViaje varchar(45) NOT NULL,
-        imagen varchar(45) NOT NULL,
-        tipoEstancia varchar(15) NOT NULL,
-        ubicacion varchar(45),
-        precioPorNoche DOUBLE NOT NULL,
-        */
 ?>
 <!DOCTYPE html>
 <html lang="en">

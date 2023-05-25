@@ -1,11 +1,7 @@
 <?php
-
     require_once("../Database/Database.php");
     $resultado=Database::getAllAlojamientos();
-
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +15,6 @@
 <body>
     <nav>
         <ul>
-            <!-- clase para los iconos -->
             <li><a class="menuA" href="../index.php">Administración</a></li>
             <li><a class="menuA" href="index.php">Estancias</a></li>
             <li><a class="menuA" href="../reservas/index.php">Reservas</a></li> 
@@ -44,14 +39,11 @@
             </thead>
             <tbody class= "contenido">
                 <?php 
-
                 foreach ($resultado as $fila){
-                    
                     for($i = 0; $i< 6 ; $i++){
                         echo "<td>". $fila[$i] . "</td>";
                     }
-                    echo "<td class=btns> <a class='btn' href='edit.php?id=".$fila['id']."'>Editar</a> <a class='btn' href='delete.php?id=".$fila['id']."'>Eliminar</a></td>";
-                    echo "</tr>";
+                    echo "<td class=btns> <a class='btn' href='edit.php?id=".$fila['id']."'>Editar</a> <a class='btn' href='delete.php?id=".$fila['id']."'>Eliminar</a></td></tr>";
                 }
                 ?>
                 </tbody>

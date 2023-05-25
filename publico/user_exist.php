@@ -21,20 +21,4 @@ if($resultado == null){
         header('Location: login.php');
     }
 }
-
-
-//userExist($resultado, $info);
-// function userExist($resultado, $info){
-//     foreach ($resultado as $fila) {
-//         if (hash_equals($info[0], $fila[4])) {
-//             if(hash_equals($info[1], $fila[5])){
-//                 header('Location: index.php?bien="1"');
-//             } else {
-//                 header('Location: login.php?bien="0"');
-//             }
-//         } else{
-//             header('Location: login.php?bien="0"');
-//         }
-//     }
-// }
 ?>

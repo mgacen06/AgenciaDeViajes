@@ -1,6 +1,5 @@
 // NAV
 let elNav=document.getElementById("elNav");
-
 let ulNav=document.createElement("ul");
 ulNav.setAttribute("class","ulnav");
 
@@ -40,8 +39,6 @@ aReserva.textContent="Reservar";
 liReserva.appendChild(aReserva);
 ulNav.appendChild(liReserva);
 
-
-
 let liLogin=document.createElement("li");
 let aLogin=document.createElement("a");
 aLogin.setAttribute("class","linav");
@@ -65,7 +62,6 @@ let ap1Login = document.createElement("a");
 let ap2Login = document.createElement("a");
 
 summaryLogin.style.backgroundColor="black";
-// summaryLogin.textContent ="";
 summaryLogin.setAttribute("class","summary");
 detailsLogin.style.color= "white";
 ap1Login.textContent= "Login ";
@@ -83,8 +79,6 @@ summaryLogin.appendChild(ap1Login);
 summaryLogin.appendChild(ap2Login);
 detailsLogin.appendChild(summaryLogin);
 liLogin.appendChild(detailsLogin);
-
-
 
 // FOOTER
 let elFooter=document.getElementById("elFooter");

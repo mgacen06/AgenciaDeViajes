@@ -1,11 +1,7 @@
 <?php
-
     require_once("../Database/Database.php");
     $resultado=Database::getAllReservas();
-
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,9 +39,7 @@
             </tbody>
             <tbody class= "contenido">
                 <?php 
-
                 foreach ($resultado as $fila){
-                    // opcional con las comillas dobles las diferencio con barra invertida si las quiero usar dentro de un string
                     echo "<tr>";
                     for($i = 0; $i< 5 ; $i++){
                         echo "<td>". $fila[$i] . "</td>";

@@ -1,11 +1,8 @@
 <?php 
-
 $datos = [$_POST['id'], $_POST['nombreViaje'], $_POST['imagen'],$_POST['tipoEstancia'],$_POST['ubicacion'],$_POST['precioPorNoche']];
-      
 require_once('../Database/Database.php');
 Database::updateAlojamientos($datos);
 header('Location: index.php');
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
