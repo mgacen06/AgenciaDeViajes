@@ -1,10 +1,9 @@
 <?php
 require_once("../administracion/Database/Database.php");
 $resultado = Database::getAllAlojamientos();
-$nombre = $_GET['nombre'];
 
-if (isset($nombre)) {
-    
+if (isset($_GET['nombre'])) {
+    $nombre = $_GET['nombre'];
 }
 ?>
 <!DOCTYPE html>
