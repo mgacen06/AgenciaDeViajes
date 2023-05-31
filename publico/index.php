@@ -1,6 +1,11 @@
 <?php
 require_once("../administracion/Database/Database.php");
 $resultado = Database::getAllAlojamientos();
+$nombre = $_GET['nombre'];
+
+if (isset($nombre)) {
+    
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

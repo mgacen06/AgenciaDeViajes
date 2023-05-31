@@ -1,11 +1,8 @@
 <?php 
-
-$datos = [$_POST['id'],$_POST['rol'], $_POST['dni'], $_POST['nombre'],$_POST['apellidos'],$_POST['correo'],$_POST['contrasenia'], $_POST['direccion']];
-      
+$datos = [$_POST['id'],$_POST['rol'], $_POST['dni'], $_POST['nombre'],$_POST['apellidos'],$_POST['correo'],$_POST['contrasenia'], $_POST['direccion']];     
 require_once('../Database/Database.php');
 Database::updateUsuarios($datos);
 header('Location: index.php');
-
 ?>
 
 <!DOCTYPE html>
