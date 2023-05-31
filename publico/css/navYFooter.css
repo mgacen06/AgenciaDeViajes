@@ -65,6 +65,9 @@ details:hover .summary{
 .linav:hover{
     border-bottom: rgb(187, 146, 231) solid 2px;
 }  
+.linav:last-child:hover{
+    border-bottom:rgb(0, 0, 0) solid 2px;
+}
 
 /**** Css del footer ****/
 footer {
