@@ -15,7 +15,7 @@
     <nav id="elNav"></nav>
     <main class="hijo2form">
         <br><div><h3>Contacto</h3></div>
-        <form method="" action="" class="caja" id="contacto">
+        <form method="" action="" id="contacto">
             <label>Nombre<br>
                 <input type="text" placeholder="Nombre" onblur="validarNombre()" name="nombre" id="nombre">
                 <span id="spanNombre"></span>
