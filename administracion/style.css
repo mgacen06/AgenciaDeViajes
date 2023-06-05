@@ -8,9 +8,9 @@ body{
     justify-content: center;
     font-family: sans-serif;
     display:flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
+
 #videoFondo{
     position: fixed;
     top: 0;

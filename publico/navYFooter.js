@@ -110,23 +110,11 @@ elFooter.appendChild(divRedes);
 
 let divFooter =document.createElement("div");
 divFooter.setAttribute("class","infoFooter");
-let divAbout=document.createElement("div");
-divAbout.setAttribute("id","aboutus");
-let h4about=document.createElement("h4");
-h4about.textContent="Nuestra historia";
-let pabout1=document.createElement("p");
-pabout1.textContent="Es una empresa que nació en 2004, por Lucía Ortiz y Mario García, llegando a posicionarse como una de las empresas de viajes con más usuarios registrados, en la que más de 50.000 personas al año confían para planificar sus vacaciones.";
-let pabout2=document.createElement("p");
-pabout2.textContent="Visita nuestras redes sociales para conocer más.";
 let small=document.createElement("small");
+small.setAttribute('class', 'smallCopy'); 
 let fecha = new Date();
 let anno = fecha.getFullYear();
 small.textContent=`Copyright © ${anno} Empresa de venta de alojamientos. Todos los derechos reservados. C/ Bernardino Obregón 25, 28012. Madrid, España`;
 small.style.color="white";
-
-divAbout.appendChild(h4about);
-divAbout.appendChild(pabout1);
-divAbout.appendChild(pabout2);
-divFooter.appendChild(divAbout);
 divFooter.appendChild(small);
 elFooter.appendChild(divFooter);

@@ -42,7 +42,7 @@ if (isset($_GET['nombre'])) {
                 echo "<img class='imagen' alt='Avatar' src=" . $fila['imagen'] . "></img>";
                 echo "<div class='info'>";
                 echo "<h4 class='titulo'>" . $fila['nombreViaje'] . "</h4>";
-                echo "<small>" . $fila['tipoEstancia'] . "</small>";
+                echo "<small class='tipo'>" . $fila['tipoEstancia'] . "</small>";
                 echo "<p class='lugar'>" . $fila['ubicacion'] . "</p>";
                 echo "<div class='precio'>" . $fila['precioPorNoche'] . "€/noche</div>";
                 echo "</div>";
