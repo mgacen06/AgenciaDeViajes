@@ -1,8 +1,28 @@
 /**** Css del nav ****/
+ @media (max-width:500px) {
+    #elFooter{
+        display: none;
+    }
+    .linav{
+        height: min-content;
+        width:1px;
+    }
+}
+/*sin terminar el resposive del texto del nav*/
+@media (min-width:501px ) {
+    #elNav{
+        height: fit-content;
+    }
+    .linav{
+       height: fit-content;
+       width: fit-content;
+    }
+}
 nav {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: fit-content;
     margin: 0px;
     background-color: black;
     justify-content: space-around;
@@ -50,6 +70,7 @@ details:hover .summary{
 
 .linav {
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
     margin: 5px;
     font-size: 23px;
@@ -72,7 +93,7 @@ details:hover .summary{
 /**** Css del footer ****/
 footer {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
     align-items: center;
@@ -105,25 +126,14 @@ footer {
 
 .infoFooter {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
     color: white;
 }
-
-#aboutus {
-    justify-content: left;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid rgb(54, 49, 49);
-    border-radius: 10px;
-}
-
-#aboutus::first-letter {
-    color: brown;
-    font-size: 20px;
-}
-
 #botontw {
     margin-right: 5px;
+}
+.smallCopy{
+    margin: 3%;
 }
