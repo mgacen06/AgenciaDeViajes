@@ -23,25 +23,16 @@
             <h2><strong>Descubre alojamientos increíbles</strong></h2>
             <div class="caja2">
                 <div class="pais">
-                    <div class="hoverC">
                         <img src="img/vid1.jpg" alt="Imagen de fondo" class="imgF">
-                        <video src="img/vid1.mp4" id="videoF" autoplay muted loop></video>
-                        <div>Europa</div>
-                    </div>
+                        <!-- <video src="img/vid1.mp4" id="videoF" autoplay muted loop></video> -->   
                 </div>
                 <div class="pais">
-                    <div class="hoverC">
                     <img src="img/vid2.jpg" alt="Imagen de fondo" class="imgF">
-                    <video src="img/vid2.mp4"" id="videoF" autoplay muted loop></video>
-                    <div>Africa</div>
-                    </div>
+                    <!-- <video src="img/vid2.mp4"" id="videoF" autoplay muted loop></video> -->
                 </div>
                 <div class="pais">
-                    <div class="hoverC">
                     <img src="img/vid3.jpg" alt="Imagen de fondo" class="imgF">
-                    <video src="img/vid3.mp4" id="videoF" autoplay muted loop></video>
-                    <div>Australia</div>
-                    </div>
+                    <!-- <video src="img/vid3.mp4" id="videoF" autoplay muted loop></video> -->
                 </div>
             </div>
         </div>

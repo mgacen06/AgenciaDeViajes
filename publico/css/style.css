@@ -95,6 +95,8 @@ div [class="lineah"] {
 }
 /* syles de about us */
 #mainAu{
+    display: flex;
+    flex-wrap: wrap;
     font-family: Georgia,Times,Times New Roman,serif; 
     background: linear-gradient(90deg, rgba(199, 238, 222, 0.889) 20%, rgb(182, 186, 234) 52%, rgb(237, 204, 234) 79%);
 }
@@ -115,7 +117,6 @@ div [class="lineah"] {
     width:70%;
     margin-top: 10px;
     margin-bottom: 20px;
-
 }
 .caja2{
     margin-top:15px;
@@ -124,33 +125,28 @@ div [class="lineah"] {
     display: flex;
     flex-direction: row;
 }
-
 .pais{
-    height: 300px;
-    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vw;
+    width: 30vw;
     margin: 0px;
     padding: 20px;
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     padding: 0px;
-}
-
-.hoverC {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    object-fit: fill;
+    /* width: 100%;
+    height: 100%; */
     margin:0px;
 }
-
 .imgF{
+    object-fit: fill;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     display: block;
-
 }
-#videoF{
+/* #videoF{
     display: block;
     width: 100%;
     height: 100%;
@@ -165,13 +161,12 @@ div [class="lineah"] {
   
 .pais:hover #videoF {
     display: block;
-} 
+}  */
 #texto{
     background-color: rgb(173, 224, 171);
     padding: 40px;
     margin-left: 50px;
     border-radius: 30px;
-    background-image: url("../img/");
     color:#175b11;
     
 }
@@ -350,114 +345,6 @@ div [class="lineah"] {
     #boton {
         display: flex;
     }
-    #mainAu{
-        font-family: Georgia,Times,Times New Roman,serif; 
-        background: linear-gradient(90deg, rgba(199, 238, 222, 0.889) 20%, rgb(182, 186, 234) 52%, rgb(237, 204, 234) 79%);
-    }
-    .caja{
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        width: 100%;
-        padding-bottom: 50px;
-
-    }
-    .caja1{  
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width:70%;
-        margin-top: 10px;
-        margin-bottom: 20px;
-
-    }
-    .caja2{
-        margin-top:15px;
-        margin-bottom: 45px;
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .pais{
-        height: 300px;
-        width: 400px;
-        margin: 0px;
-        padding: 20px;
-        overflow: hidden;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-        padding: 0px;
-    }
-
-    .hoverC {
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        margin:0px;
-    }
-    
-    .imgF{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-
-    }
-    #videoF{
-        display: block;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        z-index: -1;
-    }
-    .pais:hover .imgF {
-        display: none;
-    } 
-      
-    .pais:hover #videoF {
-        display: block;
-    } 
-    #texto{
-        background-color: rgb(173, 224, 171);
-        padding: 40px;
-        margin-left: 50px;
-        border-radius: 30px;
-        background-image: url("../img/");
-        color:#175b11;
-        
-    }
-    #texto:first-child{
-        background-color: rgb(226, 133, 163);
-        color:#510909;
-
-    }
-    #texto:first-child:hover{
-        transition: 600ms;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0.5, 1);
-    }
-    #texto:last-child:hover{
-        transition: 600ms;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0.5, 1);
-    }
-    #texto::first-line{
-        font-style: italic;
-        color: rgb(0, 0, 0);
-    }
-    #lineah2{
-        width: 200px;
-        height: 2px;
-        background-color: rgb(3, 0, 0);
-    }
-    #lineah1{
-        width: 200px;
-        height: 2px;
-        background-color: rgb(3, 0, 0);
-    } 
 
 }
 
@@ -626,111 +513,34 @@ div [class="lineah"] {
         padding-bottom: 50px;
 
     }
-    .caja1{  
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width:70%;
-        margin-top: 10px;
-        margin-bottom: 20px;
 
-    }
-    .caja2{
-        margin-top:15px;
-        margin-bottom: 45px;
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .pais{
-        height: 300px;
-        width: 400px;
-        margin: 0px;
-        padding: 20px;
-        overflow: hidden;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-        padding: 0px;
-    }
-
-    .hoverC {
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        margin:0px;
-    }
     
-    .imgF{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-
-    }
-    #videoF{
-        display: block;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        z-index: -1;
-    }
-    .pais:hover .imgF {
-        display: none;
-    } 
-      
-    .pais:hover #videoF {
-        display: block;
-    } 
-    #texto{
-        background-color: rgb(173, 224, 171);
-        padding: 40px;
-        margin-left: 50px;
-        border-radius: 30px;
-        background-image: url("../img/");
-        color:#175b11;
-        
-    }
-    #texto:first-child{
-        background-color: rgb(226, 133, 163);
-        color:#510909;
-
-    }
-    #texto:first-child:hover{
-        transition: 600ms;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0.5, 1);
-    }
-    #texto:last-child:hover{
-        transition: 600ms;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0.5, 1);
-    }
-    #texto::first-line{
-        font-style: italic;
-        color: rgb(0, 0, 0);
-    }
-    #lineah2{
-        width: 200px;
-        height: 2px;
-        background-color: rgb(3, 0, 0);
-    }
-    #lineah1{
-        width: 200px;
-        height: 2px;
-        background-color: rgb(3, 0, 0);
-    }  
-
 }
 /*responsive para móviles*/
-@media (max-width:700px) {
+@media (max-width:780px) {
     .buscador{
+        width: min-content;
+    }
+    .button1{
         display: none;
     }
-    .tipo{
-        display: none;
+    .card{
+        margin:3px;
+        width: 50vw;
+        height: 60vw;
     }
     .lugar{
         display: none;
+    }
+    .caja2{
+        flex-direction: column;
+    }
+    #texto{
+        margin-top:12px;
+    }
+    .imagen {
+        width: 50vw;
+        height: 30vw;
+        border-radius: 15px 15px 0px 0px;
     }
 }

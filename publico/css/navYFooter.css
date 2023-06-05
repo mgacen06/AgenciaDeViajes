@@ -3,12 +3,9 @@
     #elFooter{
         display: none;
     }
-    #elNav{
-        display: none;
-    }
     .linav{
         height: min-content;
-        width:5px;
+        width:1px;
     }
 }
 /*sin terminar el resposive del texto del nav*/
