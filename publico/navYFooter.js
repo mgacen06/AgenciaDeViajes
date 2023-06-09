@@ -106,7 +106,7 @@ aredes1.appendChild(iredes1);
 aredes2.appendChild(iredes2);
 divRedes.appendChild(aredes1);
 divRedes.appendChild(aredes2);
-elFooter.appendChild(divRedes);
+// elFooter.appendChild(divRedes);
 
 let divFooter =document.createElement("div");
 divFooter.setAttribute("class","infoFooter");
@@ -117,4 +117,4 @@ let anno = fecha.getFullYear();
 small.textContent=`Copyright © ${anno} Empresa de venta de alojamientos. Todos los derechos reservados. C/ Bernardino Obregón 25, 28012. Madrid, España`;
 small.style.color="white";
 divFooter.appendChild(small);
-elFooter.appendChild(divFooter);
+// elFooter.appendChild(divFooter);
