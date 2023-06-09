@@ -137,3 +137,14 @@ footer {
 .smallCopy{
     margin: 3%;
 }
+
+@media (max-width:490px){
+    .linav{
+        
+        font-size:small;
+        padding: 5px;
+    }
+    .ulnav{
+        gap:5px;
+    }
+}

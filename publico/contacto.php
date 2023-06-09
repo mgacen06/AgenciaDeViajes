@@ -13,31 +13,38 @@
 </head>
 <body>
     <nav id="elNav"></nav>
-    <main class="hijo2form">
-        <br><div><h3>Contacto</h3></div>
-        <form method="" action="" id="contacto">
-            <label>Nombre<br>
-                <input type="text" placeholder="Nombre" onblur="validarNombre()" name="nombre" id="nombre">
-                <span id="spanNombre"></span>
-            </label>
-            <br><br>
-            <label>Apellidos<br>
-                <input type="text" placeholder="Apellidos" onblur="validarApellidos()" name="apellidos" id="apellidos">
-                <span id="spanApellido"></span>
-            </label>
-            <br><br>
-            <label>Correo<br>
-                <input type="email" placeholder="xxxxx@gmail.com" onblur="validarCorreo()" name="correo" id="correo">
-                <span id="spanCorreo"></span>
-            </label>
-            <br><br>
-            <label>Texto a enviar<br>
-                <textarea rows="3" cols="20" placeholder="De 5 a 150 carácteres" onblur="validarTexto()" name="texto" ></textarea>
-                <br>
-                <span id="spanTexto"></span>
-            </label>
-            <br><br>
-            <button type="submit" name="" id="boton">Enviar</button>
+    <main>
+        <div class="hijo2form">
+            <br><div><h3>Contacto</h3></div>
+            <form method="" action="" id="contacto">
+                <div class="hijo3form">
+                    <label>Nombre<br>
+                        <input type="text" placeholder="Nombre" onblur="validarNombre()" name="nombre" id="nombre">
+                        <span id="spanNombre"></span>
+                    </label>
+                    <br><br>
+                    <label>Apellidos<br>
+                        <input type="text" placeholder="Apellidos" onblur="validarApellidos()" name="apellidos" id="apellidos">
+                        <span id="spanApellido"></span>
+                    </label>
+                    <br><br>
+                </div>
+                <div class="hijo3form">
+                    <label>Correo<br>
+                            <input type="email" placeholder="xxxxx@gmail.com" onblur="validarCorreo()" name="correo" id="correo">
+                            <span id="spanCorreo"></span>
+                        </label>
+                        <br><br>
+                        <label>Texto a enviar<br>
+                            <textarea rows="3" cols="20" placeholder="De 5 a 150 carácteres" onblur="validarTexto()" name="texto" ></textarea>
+                            <br>
+                            <span id="spanTexto"></span>
+                        </label>
+                        <br><br>
+                    </div>
+                    <button type="submit" name="" id="boton">Enviar</button>
+                <form method="" action="" id="contacto">   
+            </div>
         </form>
     </main>
     <footer>

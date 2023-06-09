@@ -14,31 +14,34 @@
 </head>
 <body>
     <nav id="elNav"></nav>
-    <main class="hijo2form">
-        <br>
-        <div>
+
+    <main>
+    <br>
+        <div class="hijo2form">
+        <div class="hijo3form">
             <h3>Inicio de sesión</h3>
+            <form method="POST" action="user_exist.php" class="caja" id="login">
+                <br><br>
+                <label>Correo<br>
+                    <input type="email" placeholder="xxxxx@gmail.com" onblur="validarCorreo()" name="correo" id="correo" required>
+                    <span id="spanCorreo"></span>
+                </label>
+                <br><br>
+                <label>Contraseña<br>
+                    <input placeholder="********" onblur="validarContrasenia()" name="contrasenia" type="password" id="contrasenia" required>
+                    <br>
+                    <span id="spanContrasenia"></span>
+                </label>
+                <br><br>
+                <button class="btn" type="submit" name="">Iniciar sesión</button>
+        </div class="hijo3form">
+                <br><br>
+                <br><br>
+                <div>¿Todavía no te has registrado? Haz click aquí:</div>
+                <a href="registro.php" class="btn"> Registrarse</a>
+                <br><br>
+            </form>
         </div>
-        <form method="POST" action="user_exist.php" class="caja" id="login">
-            <br><br>
-            <label>Correo<br>
-                <input type="email" placeholder="xxxxx@gmail.com" onblur="validarCorreo()" name="correo" id="correo" required>
-                <span id="spanCorreo"></span>
-            </label>
-            <br><br>
-            <label>Contraseña<br>
-                <input placeholder="********" onblur="validarContrasenia()" name="contrasenia" type="password" id="contrasenia" required>
-                <br>
-                <span id="spanContrasenia"></span>
-            </label>
-            <br><br>
-            <button type="submit" name="">Iniciar sesión</button>
-            <br><br>
-            <div>¿Todavía no te has registrado? Haz click aquí:</div>
-            <br><br>
-            <a href="registro.php" class="button1"> Registrarse</a>
-            <br><br>
-        </form>
     </main>
     <footer id="elFooter"></footer>
 </body>

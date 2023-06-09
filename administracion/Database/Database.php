@@ -2,25 +2,35 @@
 class Database
 {
     // Conectar
-    public static function conectar()
-    {
-        $driver = 'mysql';
-        $host = 'localhost';
-        $port = '3306';
-        $user = 'root';
-        $password = '';
-        $db = 'agencia';
-        $dsn = "$driver:dbname=$db;host=$host;port=$port";
+    public static function conectar(){
+
+        $driver="mysql";
+
+        $host="mysql-5706.dinaserver.com";
+
+        $bd="tfg2022imf";
+
+        $port=3306;
+
+        $dsn="$driver:host=$host;port=$port;dbname=$bd";
 
         try {
-            // La variable $gbd tiene toda la configuracion de la conexion
-            $gbd = new PDO($dsn, $user, $password);
+
+            $conexion=new PDO($dsn, 'admintfg22', 'Morcilla01.');
+            
+            // $conexion->setAttribute(PDO::ATTR_ERRORMODE, PDO::ERRORMODE_EXCEPTION);
             // echo 'Conectado correctamente';
+
         } catch (PDOException $e) {
-            echo 'Falló la conexión: ' . $e->getMessage();
+
+            echo 'Falló la conexión ' . $e->getMessage();
+
         }
-        return $gbd;
+
+        return $conexion;
+
     }
+
 
     public static function getAllAlojamientos()
     {
@@ -68,12 +78,14 @@ class Database
 
     public static function saveAlojamientos($datos){
         $sql= "INSERT INTO 7_alojamientos(nombreViaje, imagen, tipoEstancia, ubicacion, precioPorNoche) VALUES ($datos[1], '$datos[2]', '$datos[3]', '$datos[4]' , '$datos[5]')";
+         var_dump($sql);
+         exit();
         self::conectar()->exec($sql);
     }
     public static function saveReservas($datos){
         $sql= "INSERT INTO 7_reservas(fechaInicio, fechaFin, usuarios_id, alojamientos_id) VALUES ('$datos[1]', '$datos[2]', $datos[3], $datos[4])";
         self::conectar()->exec($sql);
-    }
+    } 
     public static function saveUsuarios($datos){
         $sql= "INSERT INTO 7_usuarios(rol, dni, nombre, apellidos, correo, contrasenia, direccion) VALUES ($datos[1], '$datos[2]', '$datos[3]', '$datos[4]' , '$datos[5]', '$datos[6]', '$datos[7]')";
         self::conectar()->exec($sql);

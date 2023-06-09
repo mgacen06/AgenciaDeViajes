@@ -85,17 +85,32 @@ div [class="lineah"] {
     display:flex;
     flex-wrap:wrap;
     width:80vw; 
+    height: 390px;
     flex: row;
     margin:10px 10px 10px 10px;
     padding:0px;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+.hijo3form{
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
 }
 #contacto{
-    width:70vw;
+
+    width:80vw;
     padding:10px;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    flex-direction: row;
+    font-size: larger;
 }
 
 /* Style de los viajes */
@@ -239,6 +254,10 @@ div [class="lineah"] {
     width: 70px;
     height: 50px;
     background-color: rgba(193, 164, 247, 0.876);
+    font-size: small;
+    text-align: center;
+    padding: 10px;
+
 }
 .lineaVer{
     width:5px;
@@ -518,7 +537,7 @@ div [class="lineah"] {
 
     
 }
-/*responsive para móviles*/
+/*responsive para tabletas*/
 @media (max-width:780px) {
     .buscador{
         width: min-content;
@@ -546,19 +565,46 @@ div [class="lineah"] {
         border-radius: 15px 15px 0px 0px;
     }
     .hijo2form{
+        font-size: small;
         display:flex;
         flex-wrap:wrap;
         width:80vw; 
         flex: row;
         margin:10px 10px 10px 10px;
-        padding:0px;
+        padding:12px;
+        justify-content: center;
     }
     #contacto{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
         width:70vw;
         padding:10px;
         align-items: center;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+
+    }
+    .formReserva1{
+        font-size: small;
+        padding: 7px;
+    }
+
+}
+@media (max-width:490px){
+    .precio{
+        height: 9px;
+        margin-top: 0px;
+    }
+    .card{
+        width: 50vw;
+        height: 70vw;
+        padding-bottom: 20px;
+    }
+    .imagen{
+        width: 50vw;
+        height: 40vw;
+        border-radius: 15px 15px 0px 0px;
     }
 }
