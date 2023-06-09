@@ -24,6 +24,7 @@ if (isset($_GET['nombre'])) {
 
 <body>
     <nav id="elNav"></nav>
+
     <main>
         <a id="titulo" href="index.php">Viajes Lario</a>
         <div class="buscador">
