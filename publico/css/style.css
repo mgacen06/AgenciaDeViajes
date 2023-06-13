@@ -7,7 +7,7 @@ a:active {
 
 body {
     display: flex;
-    flex-wrap: wrap     ;
+    flex-wrap: wrap;
     flex-direction: column;
     font-family: sans-serif;
     height: auto;
@@ -80,6 +80,12 @@ div [class="lineah"] {
 .destino {
     width: 250px;
 }
+#login{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap:20px;
+}
 
 .hijo2form{
     display:flex;
@@ -91,7 +97,7 @@ div [class="lineah"] {
     padding:0px;
     justify-content:space-around;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column
 
 }
 .hijo3form{
@@ -99,7 +105,13 @@ div [class="lineah"] {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    
+    gap:20px;
+    padding: 20px;
+}
+.hijo3form:last-child{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 #contacto{
 
@@ -141,7 +153,6 @@ div [class="lineah"] {
     justify-content: center;
     width: 100%;
     padding-bottom: 50px;
-
 }
 .caja1{  
     display: flex;
@@ -257,7 +268,9 @@ div [class="lineah"] {
     font-size: small;
     text-align: center;
     padding: 10px;
-
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
 }
 .lineaVer{
     width:5px;
@@ -285,8 +298,8 @@ div [class="lineah"] {
     padding: 20px;
     align-items: center;
     width: 60vw;
-
 }
+
 #registro{
     gap: 20px;
     padding: 10px;
@@ -353,6 +366,12 @@ div [class="lineah"] {
         font-size: 13px;
         margin-left: 10px;
     }
+    #login{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        gap:20px;
+    }
 
     .hijo2form {
         display: flex;
@@ -366,7 +385,7 @@ div [class="lineah"] {
         backdrop-filter: blur(15px);
         margin-left: 36vw;
         flex-wrap:wrap;
-        flex-direction: row;
+        flex-direction: column;
         margin:10px 10px 10px 10px;
         padding:0px;
     
@@ -490,20 +509,32 @@ div [class="lineah"] {
         padding: 10px;
         margin-left: 10px;
     }
+    #login{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        gap:20px;
+    }
 
     .hijo2form {
         display: flex;
         flex-direction: column;
         margin: 10px;
         padding: 2px;
-        padding-top: 15px;
+        margin-top: 25px;
         padding-bottom: 15px;
-        width: 80vw;
+        width: 50vw;
         border-radius: 20px;
         border: 2px solid rgb(200, 199, 226);
         background-color: rgba(255, 255, 255, 0.45);
         backdrop-filter: blur(15px);
         justify-content: space-evenly;
+        width: 70vw;
+    }
+    .hijo3form{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .formulario {
@@ -568,7 +599,6 @@ div [class="lineah"] {
         width: 70px;
         background-color: #ffffff;
     }
-
     #adminboton:hover {
         border: 1px solid #111;
         box-shadow: 0px 0px 26px 8px hsla(268, 33%, 72%, 0.58);
@@ -592,7 +622,7 @@ div [class="lineah"] {
     
 }
 /*responsive para tabletas*/
-@media (max-width:780px) {
+@media (max-width:768px) {
     .buscador{
         width: min-content;
     }
@@ -644,9 +674,24 @@ div [class="lineah"] {
         font-size: small;
         padding: 7px;
     }
+    .hijo3form{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    .hijo2form{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 
 }
-@media (max-width:490px){
+
+
+/* móviles */
+@media (max-width:590px){
+
     .precio{
         height: 9px;
         margin-top: 0px;
@@ -661,20 +706,22 @@ div [class="lineah"] {
         height: 40vw;
         border-radius: 15px 15px 0px 0px;
     }
-    #contacto{
-    }
     .hijo2form{
         font-size: small;
         display:flex;
         flex-wrap:wrap;
         width:80vw; 
-        flex: row;
-        padding:20px;
+        flex-direction: column;
+        padding:10px;
         margin:10px 10px 10px 10px;
         justify-content: center;
     }
     .hijo3form{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         padding: 0px;
+
     }
     .cart{
         width: 60vw;
@@ -701,7 +748,16 @@ div [class="lineah"] {
         width: fit-content;
         height: fit-content;
         font-size: smaller;
+
     }
-    
+    .hijo3form{
+        display: flex;
+        flex-direction: column;
+    }
+    .hijo2form{
+        display: flex;
+        flex-direction: column;
+
+    } 
 
 }

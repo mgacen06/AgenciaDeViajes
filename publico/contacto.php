@@ -42,7 +42,7 @@
                         </label>
                         <br><br>
                     </div>
-                    <button type="submit" name="" id="boton">Enviar</button>
+                    <button type="submit" name="" class="btn">Enviar</button>
                 <form method="" action="" id="contacto">   
             </div>
         </form>
