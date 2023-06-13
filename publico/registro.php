@@ -15,7 +15,7 @@
     <nav id="elNav"></nav>
     <main>
         <div class="reg">
-            <div><h3>Registro</h3></div>
+            <div><h2>Registro</h2></div>
                 <form method="" action="" class="formul">
                     <div id="registro">
                         <label>Nombre<br>

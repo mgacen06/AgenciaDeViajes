@@ -15,14 +15,11 @@ if (isset($_GET['nombre'])) {
     <meta name="author" content="Lucía Ortiz y Mario García">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../publico/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/navYFooter.css">
     <link rel="shortcut icon" href="img/icono.ico" type="" id="icono">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css%22%3E">
     <title>Viajes Lario</title>
 </head>
-
 <body>
     <nav id="elNav"></nav>
 
