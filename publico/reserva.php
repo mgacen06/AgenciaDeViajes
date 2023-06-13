@@ -34,7 +34,6 @@
                         <select id="metodo_pago" name="metodo_pago" required>
                             <option value="paypal">PayPal</option>
                             <option value="tarjeta_credito">Tarjeta de crédito</option>
-                            <option value="paypal">PayPal</option>
                             <option value="transferencia_bancaria">Transferencia bancaria</option>
                         </select><br><br>
                     <label for="tarjeta_credito">Tarjeta de crédito:</label>
