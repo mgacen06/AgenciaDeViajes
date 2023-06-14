@@ -17,6 +17,9 @@ body {
     background: linear-gradient(90deg, rgba(187, 150, 218, 0.8885679271708683) 20%, rgba(168, 150, 221, 1) 52%, rgba(131, 132, 222, 1) 79%);
 }
 
+#cajamain{
+    height: 90vh;
+}
 main {
     display: flex;
     flex-wrap: wrap;
@@ -92,13 +95,11 @@ div [class="lineah"] {
     flex-wrap:wrap;
     width:80vw; 
     height: 390px;
-    flex: row;
     margin:10px 10px 10px 10px;
     padding:0px;
     justify-content:space-around;
     align-items: center;
-    flex-direction: column
-
+    flex-direction: column;
 }
 .hijo3form{
     height: fit-content;
@@ -113,16 +114,51 @@ div [class="lineah"] {
     flex-wrap: wrap;
     align-items: center;
 }
+.cajacontacto{
+    border: 2px solid rgb(200, 199, 226);
+    align-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px;
+    height: 80vh;
+    width: 80vw;
+    
+}
+.contactoform{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:50vw; 
+    height: 90vh;
+    margin:10px 10px 10px 10px;
+    padding:0px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.txtarea{
+    resize: none;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
 #contacto{
-
-    width:80vw;
+    gap: 15px;
+    width:min-content;
+    height: min-content;
     padding:10px;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
     font-size: larger;
+    margin-bottom: 0px;
 }
 
 /* Style de los viajes */
@@ -230,6 +266,7 @@ div [class="lineah"] {
 #cartAu{
     height: 100%;
     background: linear-gradient(90deg, rgba(189, 207, 232, 0.889) 20%, rgb(70, 78, 156) 52%, rgb(193, 177, 231) 79%);
+    padding-bottom: 240px;
 }
 .cart{
     font-family: sans-serif; 
@@ -264,13 +301,14 @@ div [class="lineah"] {
     border-radius: 20px;
     width: 70px;
     height: 50px;
-    background-color: rgba(193, 164, 247, 0.876);
+    background-color: rgba(0, 0, 0, 0.876);
     font-size: small;
     text-align: center;
     padding: 10px;
     text-decoration: none;
     width: fit-content;
     height: fit-content;
+    color: white;
 }
 .lineaVer{
     width:5px;
@@ -292,12 +330,13 @@ div [class="lineah"] {
     background-color: rgba(255, 255, 255, 0.45);
     backdrop-filter: blur(15px);
     border-radius: 20px;
-    width: 50vw;
     border: 2px solid rgb(200, 199, 226);
     align-content: center;
     padding: 20px;
     align-items: center;
     width: 60vw;
+    height:55vh;
+    margin-bottom: 20px;
 }
 
 #registro{
@@ -310,7 +349,10 @@ div [class="lineah"] {
 }
 
 
-@media (min-width:1284px) {
+ @media (max-width:1440px) {
+    #cajamain{
+        height: 70vh;
+    }
     #titulo {
         font-family: Montserrat;
         font-size: 55px;
@@ -375,20 +417,18 @@ div [class="lineah"] {
 
     .hijo2form {
         display: flex;
-        flex-wrap: wrap;
-        width: 20vw;
+        flex-direction: column;
+        margin: 10px;
+        padding: 2px;
+        margin-top: 25px;
+        padding-bottom: 15px;
         border-radius: 20px;
         border: 2px solid rgb(200, 199, 226);
-        align-content: center;
-        align-items: center;
         background-color: rgba(255, 255, 255, 0.45);
         backdrop-filter: blur(15px);
-        margin-left: 36vw;
-        flex-wrap:wrap;
-        flex-direction: column;
-        margin:10px 10px 10px 10px;
-        padding:0px;
-    
+        justify-content: space-evenly;
+        width: 50vw;
+        height: 50vh;
     }
     .reg{
         margin-top: 20px;
@@ -444,7 +484,7 @@ div [class="lineah"] {
 
 }
 
-@media (max-width:1283px) {
+@media (max-width:1235px) {
     #icono {
         display:block;
         width: 20px;
@@ -488,7 +528,6 @@ div [class="lineah"] {
         margin: 1px 10px 10px 10px;
 
     }
-  
 
     .titulo {
         margin-top: 0px;
@@ -523,7 +562,6 @@ div [class="lineah"] {
         padding: 2px;
         margin-top: 25px;
         padding-bottom: 15px;
-        width: 50vw;
         border-radius: 20px;
         border: 2px solid rgb(200, 199, 226);
         background-color: rgba(255, 255, 255, 0.45);
@@ -535,6 +573,18 @@ div [class="lineah"] {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+    }
+    .hijocontacto{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: left;
+    }
+    .titulocont{
+        text-align: center;
+        height: 700px;
+        font-size:27px;
+        font-weight: 600;
     }
 
     .formulario {
@@ -686,6 +736,39 @@ div [class="lineah"] {
         flex-direction: column;
     }
 
+    .txtarea{
+        resize: none;
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .contactoform{
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+
+    }
+    .reg{
+        display: flex;
+        flex-direction: row;
+        height: 80vh;
+        margin-top:20px; 
+    }
+    .formul{
+        font-size: x-small;
+        justify-content:center ;
+        align-items: center;
+        align-content: center;
+    }
+    .hijocontacto{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: left;
+    }
+
 }
 
 
@@ -759,5 +842,57 @@ div [class="lineah"] {
         flex-direction: column;
 
     } 
+    .contactoform{
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .txtarea{
+        resize: none;
+        width: 160px;
+        height: 250px;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .reg{
+        display: flex;
+        flex-direction: row;
+        height: 90vh;
+        margin-top:50px;  
+        padding: 0px;
+        gap:0px;
+        width: 80vw;
+    }
+    .formul{
+        font-size: x-small;
+    }
+    .cajacontacto{
+        align-content: center;
+        align-items:center;
+        flex-direction: row;
+        margin: 20px;
+        height: 99vh;
+        width: 80vw;
+        padding: 50px;  
+    }
+    .hijocontacto{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: left;
+        padding-bottom: 10px;
+        gap:20px;
+    }
+    
+    .titulocont{
+        margin:0px;
+        height: 20vh;
+        width: 20vw;
+        text-align: center;
+        padding-left: 20vw;
+        padding-top: 15px;
+    }
 
 }

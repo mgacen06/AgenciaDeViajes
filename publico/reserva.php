@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Lucía Ortiz y Mario García">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../publico/fontawesome/css/all.css">
-    <link rel="stylesheet" href="./css/navYFooter.css">
+    <link rel="stylesheet" href="css/navYFooter.css">
     <link rel="shortcut icon" href="img/icono.ico" type="" id="icono">
-    <title>Reserva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <title>Viajes Lario</title>
+    <title>Reservar</title>
 </head>
 <body>
     <nav id="elNav"></nav>
@@ -47,7 +48,7 @@
             
         </div>
     </main>
-    <footer>
+    <footer id="elFooter">
     <div class="redesSociales">
         <a class="redes" href="https://www.instagram.com/mgacen06/"><i id="botontw" class="fab fa-instagram"></i>Instagram</a>
         <a class="redes" href="https://twitter.com"><i id="botontw" class="fab fa-twitter"></i>Twitter</a>

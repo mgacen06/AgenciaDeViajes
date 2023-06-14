@@ -6,9 +6,9 @@ class Database
 
         $driver="mysql";
 
-        $host="mysql-5706.dinaserver.com";
+        $host="localhost";
 
-        $bd="tfg2022imf";
+        $bd="agencia";
 
         $port=3306;
 
@@ -16,7 +16,7 @@ class Database
 
         try {
 
-            $conexion=new PDO($dsn, 'admintfg22', 'Morcilla01.');
+            $conexion=new PDO($dsn, 'root', '');
             
             // $conexion->setAttribute(PDO::ATTR_ERRORMODE, PDO::ERRORMODE_EXCEPTION);
             // echo 'Conectado correctamente';
